@@ -1,40 +1,45 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
-    "./node_modules/flowbite/**/*.js"
-  ],
-  purge: {
-    options: {
-      safelist: {
-        standard: [
-            'text-2xl',
-            'text-3xl',
-            'text-4xl',
-            'text-5xl',
-            'text-6xl',
-            'sm:text-2xl',
-            'sm:text-3xl',
-            'sm:text-4xl',
-            'sm:text-5xl',
-            'sm:text-6xl',
-            'md:text-2xl',
-            'md:text-3xl',
-            'md:text-4xl',
-            'md:text-5xl',
-            'md:text-6xl',
-            'lg:text-2xl',
-            'lg:text-3xl',
-            'lg:text-4xl',
-            'lg:text-5xl',
-            'lg:text-6xl',
-        ],
+    content: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './node_modules/flowbite/**/*.js'
+
+    ],
+
+    purge: {
+      options: {
+        safelist: {
+          standard: [
+              'text-2xl',
+              'text-3xl',
+              'text-4xl',
+              'text-5xl',
+              'text-6xl',
+              'sm:text-2xl',
+              'sm:text-3xl',
+              'sm:text-4xl',
+              'sm:text-5xl',
+              'sm:text-6xl',
+              'md:text-2xl',
+              'md:text-3xl',
+              'md:text-4xl',
+              'md:text-5xl',
+              'md:text-6xl',
+              'lg:text-2xl',
+              'lg:text-3xl',
+              'lg:text-4xl',
+              'lg:text-5xl',
+              'lg:text-6xl',
+          ],
+        },
       },
     },
-  },
-  theme: {
+    theme: {
     screens: {
       'sm': '640px',
       'md': '768px',
@@ -121,10 +126,13 @@ export default {
       },
     }
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
 
-  darkMode: 'class',
-}
+    plugins: [
 
+      require('flowbite/plugin')
+
+    ],
+
+    darkMode: 'class',
+
+};
