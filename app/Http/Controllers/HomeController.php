@@ -17,12 +17,32 @@ class HomeController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Show the application dashboard for Officer.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function officerHome()
     {
-        return view('home');
+        return view('offcer.officer');
+    } 
+  
+    /**
+     * Show the application dashboard for Admin.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function adminHome()
+    {
+        return view('admin.admin');
+    }
+  
+    /**
+     * Show the application dashboard for SuperAdmin.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function superHome()
+    {
+        return view('superadmin.super');
     }
 }
