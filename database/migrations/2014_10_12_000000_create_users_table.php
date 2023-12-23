@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('username')->unique();
             $table->string('password');
             $table->tinyInteger('type')->default(0);
-            /* Users: 0=>Officer, 1=>Admin, 2=>SuperAdmin */
+            /* Users: 0=>Officer, 1=>Admin, 2=>Collector */
             $table->rememberToken();
             $table->timestamps();
         });

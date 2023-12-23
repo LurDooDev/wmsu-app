@@ -37,12 +37,12 @@ class HomeController extends Controller
     }
   
     /**
-     * Show the application dashboard for SuperAdmin.
+     * Show the application dashboard for Collector.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function superHome()
+    public function collectorHome()
     {
-        return view('superadmin.super');
+        return view('collector.collector');
     }
 }
