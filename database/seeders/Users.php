@@ -27,8 +27,8 @@ class Users extends Seeder
                 'password'=> bcrypt('123'),
             ],
             [
-                'name'=>'Super Admin',
-                'username'=>'super',
+                'name'=>'Collector',
+                'username'=>'collector',
                 'type'=>2,
                 'password'=> bcrypt('123'),
             ],
