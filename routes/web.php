@@ -27,9 +27,9 @@ Route::get('/', function () {
 
             return redirect()->route('admin.home');
 
-        } else if(Auth::user()->type == 'superadmin'){
+        } else if(Auth::user()->type == 'collector'){
 
-            return redirect()->route('super.home');
+            return redirect()->route('collector.home');
 
         }
 
@@ -53,20 +53,20 @@ Route::middleware(['auth', 'user-access:officer'])->group(function () {
   
 /*------------------------------------------
 --------------------------------------------
+All Collector Routes List
+--------------------------------------------
+--------------------------------------------*/
+Route::middleware(['auth', 'user-access:collector'])->group(function () {
+  
+    Route::get('/collector/home', [HomeController::class, 'collectorHome'])->name('collector.home');
+});
+
+/*------------------------------------------
+--------------------------------------------
 All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
-});
-  
-/*------------------------------------------
---------------------------------------------
-All SuperAdmin Routes List
---------------------------------------------
---------------------------------------------*/
-Route::middleware(['auth', 'user-access:superadmin'])->group(function () {
-  
-    Route::get('/super/home', [HomeController::class, 'superHome'])->name('super.home');
 });

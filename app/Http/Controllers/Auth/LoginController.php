@@ -51,12 +51,12 @@ class LoginController extends Controller
      
         if(auth()->attempt(array('username' => $input['username'], 'password' => $input['password'])))
         {
-            if (auth()->user()->type == 'superadmin') {
-                return redirect()->route('super.home');
+            if (auth()->user()->type == 'officer') {
+                return redirect()->route('officer.home');
             }else if (auth()->user()->type == 'admin') {
                 return redirect()->route('admin.home');
             }else{
-                return redirect()->route('officer.home');
+                return redirect()->route('collector.home');
             }
         }else{
             return back()->withErrors(['username' => 'The provided credentials do not match our records.'])->onlyInput('username');
