@@ -48,7 +48,7 @@ All Officer Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:officer'])->group(function () {
   
-    Route::get('/home', [HomeController::class, 'officerHome'])->name('officer.home');
+    Route::get('/officer/home', [HomeController::class, 'officerHome'])->name('officer.home');
 });
   
 /*------------------------------------------
