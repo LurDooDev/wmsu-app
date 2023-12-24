@@ -2,13 +2,36 @@
 
     @include('layouts.sidebar')
 
+    <!--Main-->
     <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
-    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
+    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-1">
 
-
-    <div class="mx-5 px-3 lg:px-4">
+    <div class="mx-5 px-3 ">
         <!-- Start coding here -->
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
+            <!-- Breadcrumb -->
+            <nav class="flex px-5 py-3 text-gray-700" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <li class="inline-flex items-center">
+                        <span class="inline-flex items-center text-sm font-medium text-gray-700 dark:text-gray-400">
+                            <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                            </svg>
+                            Home
+                        </span>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Remit Records</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+            <!--End Breadcrumb -->
+            <!--Table Header -->
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
                 <div class="w-full md:w-1/4">
                     <form class="flex items-center">
@@ -55,47 +78,53 @@
                     </div>
                 </div>
             </div>
+            <!--End Table Header -->
+            <!--Table-->
             <div class="overflow-x-auto">
-                <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-sm text-gray-700 uppercase bg-gray-70 dark:bg-gray-700 dark:text-gray-400">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-4 py-3">ID</th>
                             <th scope="col" class="px-4 py-3">Payment Description</th>
                             <th scope="col" class="px-4 py-3">College</th>
-                            <th scope="col" class="px-4 py-3">Payment Date</th>
-                            <th scope="col" class="px-4 py-3">Payment Date Time</th>
+                            <th scope="col" class="px-4 py-3">Date</th>
+                            <th scope="col" class="px-4 py-3">Time</th>
                             <th scope="col" class="px-4 py-3">School Year</th>
                             <th scope="col" class="px-4 py-3">Semester</th>
                             <th scope="col" class="px-4 py-3">Amount</th>
-                            <th scope="col" class="px-4 py-3">Status </th>
+                            <th scope="col" class="text-center px-4 py-3">Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                    <tr class="border-b dark:border-gray-700">
-                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
-                    <td class="px-4 py-3">CSB Fee</td>
-                    <td class="px-4 py-3">CCS</td>
-                    <td class="px-4 py-3">01/01/2023</td>
-                    <td class="px-4 py-3">10:11</td>
-                    <td class="px-4 py-3">2022-2023</td>
-                    <td class="px-4 py-3">1st Semester</td>
-                    <td class="px-4 py-3">Php 120,000</td>
-                    <td class="px-8 py-2">Paid</td>
-                    </tr>   
-                    <tr class="border-b dark:border-gray-700">
-                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
-                    <td class="px-4 py-3">CSB Fee</td>
-                    <td class="px-4 py-3">CCS</td>
-                    <td class="px-4 py-3">01/01/2023</td>
-                    <td class="px-4 py-3">10:11</td>
-                    <td class="px-4 py-3">2022-2023</td>
-                    <td class="px-4 py-3">1st Semester</td>
-                    <td class="px-4 py-3">Php 120,000</td>
-                    <td class="px-8 py-2">Paid</td>
-                    </tr>   
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                            <td class="px-4 py-3">CSB fee</td>
+                            <td class="px-4 py-3">CCS</td>
+                            <td class="px-4 py-3">01-01-2022</td>
+                            <td class="px-4 py-3">10:11</td>
+                            <td class="px-4 py-3">2022-2023</td>
+                            <td class="px-4 py-3">1st Semester</td>
+                            <td class="px-4 py-3">P70</td>
+                            <td class="px-4 py-3">Paid</td>
+                            </td>
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                            <td class="px-4 py-3">CCS fee</td>
+                            <td class="px-4 py-3">CCS</td>
+                            <td class="px-4 py-3">01-01-2023</td>
+                            <td class="px-4 py-3">12:11</td>
+                            <td class="px-4 py-3">2022-2023</td>
+                            <td class="px-4 py-3">1st Semester</td>
+                            <td class="px-4 py-3">P250</td>
+                            <td class="px-4 py-3">Paid</td>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
+            <!--End Table-->
+            <!--Table Pagination-->
             <nav class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
                 <span class="text-sm font-normal text-gray-500 dark:text-gray-400">
                     Showing
@@ -113,33 +142,36 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" aria-current="page" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-red-600 bg-primary-50 border border-red-300 hover:bg-red-100 hover:text-red-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">1</a>
+                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
                     </li>
-    <li>
-        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-    </li>
-    <li>
-        <a href="#" class="flex items-center justify-center text-sm z-10 py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
-    </li>
-    <li>
-        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">...</a>
-    </li>
-    <li>
-        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">100</a>
-    </li>
-    <li>
-        <a href="#" class="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-            <span class="sr-only">Next</span>
-            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-            </svg>
-        </a>
-    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                    </li>
+                    <li>
+                        <a href="#" aria-current="page" class="flex items-center justify-center text-sm z-10 py-2 px-3 leading-tight text-primary-600 bg-primary-50 border border-primary-300 hover:bg-primary-100 hover:text-primary-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">...</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">100</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <span class="sr-only">Next</span>
+                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </nav>
+            <!--End Table Pagination-->
         </div>
     </div>
     </section>
     </main>
+    <!--End Main-->
+
 
 @include('layouts.footer')
