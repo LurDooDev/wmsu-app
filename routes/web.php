@@ -1,6 +1,15 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuditController;
+use App\Http\Controllers\CollegeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocalFeeController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\RemitController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\UniversityFeeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -48,7 +57,26 @@ All Officer Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:officer'])->group(function () {
   
-    Route::get('/officer/home', [HomeController::class, 'officerHome'])->name('officer.home');
+    // Dashboard Officer Route
+    Route::get('/officer', [HomeController::class, 'officerHome'])->name('officer.home');
+
+    // Payment Routes
+    Route::get('/officer/payments', [PaymentController::class, 'index'])->name('officer.payments');
+
+    // Payment Records Routes
+    Route::get('/officer/payment/records', [PaymentController::class, 'indexRecords'])->name('officer.payment.records');
+
+    // Student Routes
+    Route::get('/officer/students', [StudentController::class, 'index'])->name('officer.students');
+
+    // Audit Routes
+    Route::get('/officer/audit-log', [AuditController::class, 'index'])->name('officer.audit');
+
+    // Local Fee Route
+    Route::get('/officier/fees/local', [LocalFeeController::class, 'index'])->name('officer.local.fees');
+
+    // User Management Route
+    Route::get('/officer/users', [UserController::class, 'index'])->name('officer.users');
 });
   
 /*------------------------------------------
@@ -57,8 +85,15 @@ All Collector Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:collector'])->group(function () {
-  
-    Route::get('/collector/home', [HomeController::class, 'collectorHome'])->name('collector.home');
+    
+    // Payments Routes
+    Route::get('/collector/payments', [HomeController::class, 'collectorHome'])->name('collector.home');
+
+    // Payment Records Routes
+    Route::get('/collector/payment/records', [PaymentController::class, 'indexRecords'])->name('collector.payment.records');
+
+    // User Management Route
+    Route::get('/collector/users', [UserController::class, 'index'])->name('collector.users');
 });
 
 /*------------------------------------------
@@ -68,5 +103,31 @@ All Admin Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
-    Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+    // Admin Dashboard Routes
+    Route::get('/admin', [HomeController::class, 'adminHome'])->name('admin.home');
+
+    // Colleges Routes
+    Route::get('/admin/colleges', [CollegeController::class, 'index'])->name('admin.colleges');
+
+    // Remit Records Routes
+    Route::get('/admin/remits', [RemitController::class, 'index'])->name('admin.remits');
+
+    // Student Routes
+    Route::get('/admin/students', [StudentController::class, 'index'])->name('admin.students');
+
+    // Audit Routes
+    Route::get('/admin/audit-log', [AuditController::class, 'index'])->name('admin.audit');
+
+    // Overview Route
+    Route::get('/admin/overview', [AdminController::class, 'index'])->name('admin.overview');
+
+    // University Fee Route
+    Route::get('/admin/fees/university', [UniversityFeeController::class, 'index'])->name('admin.university.fees');
+
+    // Local Fee Route
+    Route::get('/admin/fees/local', [LocalFeeController::class, 'index'])->name('admin.local.fees');
+
+    // User Management Route
+    Route::get('/admin/users', [UserController::class, 'index'])->name('admin.users');
+
 });

@@ -43,6 +43,6 @@ class HomeController extends Controller
      */
     public function collectorHome()
     {
-        return view('collector.collector');
+        return view('payments.index');
     }
 }
