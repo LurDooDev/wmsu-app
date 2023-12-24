@@ -2,7 +2,7 @@
 
     @include('layouts.sidebar')
 
-    <main class="p-4 sm:ml-64 pt-20 sm:pt-4 h-auto">
+    <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
         <div class="p-12 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
