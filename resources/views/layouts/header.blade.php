@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>WMSUCS</title>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>{{ config('app.name', 'WMSUCS') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -14,4 +16,5 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         
     </head>
-    <body class="antialiased bg-gray-50 dark:bg-gray-900">
+    <body class="bg-gray-50 dark:bg-gray-900 min-h-screen m-0 flex flex-col">
+        <div class="antiantialiased">

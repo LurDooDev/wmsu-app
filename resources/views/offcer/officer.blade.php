@@ -1,8 +1,8 @@
 @include('layouts.header')
-@include('layouts.sidebar')
-@include('layouts.footer')
 
-<div class="p-4 sm:ml-64">
+@include('layouts.sidebar')
+
+<main class="p-4 sm:ml-64 pt-20 sm:pt-4 h-auto">
    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
       <div class="grid grid-cols-3 gap-4 mb-4">
          <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
@@ -102,5 +102,6 @@
          </div>
       </div>
    </div>
-</div>
+</main>
 
+@include('layouts.footer')

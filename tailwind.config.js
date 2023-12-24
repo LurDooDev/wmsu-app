@@ -133,6 +133,4 @@ export default {
 
     ],
 
-    darkMode: 'class',
-
 };
