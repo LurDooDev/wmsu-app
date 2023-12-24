@@ -4,7 +4,7 @@
 <main class="p-4 sm:ml-64 pt-20 sm:pt-4 h-auto">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
 
-        <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-4">
+      <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-4 max-w-full">
             
             <!-- First Section -->
             <div class="col-span-1 items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800">
@@ -65,11 +65,11 @@
           </div>
         </div>
 
-        <div class="px-4 pt-6 2xl:px-0">
-         <div class="grid gap-4 xl:grid-cols-2 2xl:grid-cols-3">
-     
+        <div class="px-4 pt-6 2xl:px-0 max-w-screen-xl mx-auto">
+         <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
+
          <!-- Activity Card -->
-         <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+         <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6    dark:bg-gray-800">
             <div class="items-center justify-between lg:flex mb-10">
            <div class="mb-4 lg:mb-0">
              <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Recent Collection</h3>
@@ -173,7 +173,7 @@
                           Php 10,000
                         </td>
                         <td class="p-4 whitespace-nowrap">
-                           <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-purple-100 dark:bg-gray-700 dark:border-purple-500 dark:text-purple-400">In progress</span>
+                           <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-purple-100 dark:bg-gray-700 dark:border-purple-500 dark:text-purple-400">Returned</span>
                         </td>
                       </tr> 
                    </tbody>
