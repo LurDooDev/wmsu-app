@@ -109,6 +109,12 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     // Colleges Routes
     Route::get('/admin/colleges', [CollegeController::class, 'index'])->name('admin.colleges');
 
+    // Payments Routes
+    Route::get('/admin/payments', [PaymentController::class, 'index'])->name('admin.payments');
+
+    // Payment Records Routes
+    Route::get('/admin/payment/records', [PaymentController::class, 'indexRecords'])->name('admin.payment.records');
+
     // Remit Records Routes
     Route::get('/admin/remits', [RemitController::class, 'index'])->name('admin.remits');
 
