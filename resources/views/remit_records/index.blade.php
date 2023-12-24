@@ -4,7 +4,7 @@
 
     <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
     <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
-        <div class="p-12 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+
 
     <div class="mx-5 px-3 lg:px-4">
         <!-- Start coding here -->
@@ -71,31 +71,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-b dark:border-gray-700">
-                        <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
-                            <td class="px-4 py-3">CSB Fee</td>
-                            <td class="px-4 py-3">CCS</td>
-                            <td class="px-4 py-3">01/01/2023</td>
-                            <td class="px-4 py-3">10:11</td>
-                            <td class="px-4 py-3">2022-2023</td>
-                            <td class="px-4 py-3">1st Semester</td>
-                            <td class="px-4 py-3">Php 120,000</td>
-                            <td class="px-8 py-2">Paid</td>
-<tr class="border-b dark:border-gray-700">
-                        <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
-                        <td class="px-4 py-3">CSB Fee</td>
-                        <td class="px-4 py-3">CCS</td>
-                        <td class="px-4 py-3">01/01/2023</td>
-                        <td class="px-4 py-3">10:11</td>
-                        <td class="px-4 py-3">2022-2023</td>
-                        <td class="px-4 py-3">1st Semester</td>
-                        <td class="px-4 py-3">Php 120,000</td>
-                        <td class="px-8 py-2">Paid</td>
-                                </div>
-                            </td>
-                        </tr>
-                     
-                      
+                    <tr class="border-b dark:border-gray-700">
+                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                    <td class="px-4 py-3">CSB Fee</td>
+                    <td class="px-4 py-3">CCS</td>
+                    <td class="px-4 py-3">01/01/2023</td>
+                    <td class="px-4 py-3">10:11</td>
+                    <td class="px-4 py-3">2022-2023</td>
+                    <td class="px-4 py-3">1st Semester</td>
+                    <td class="px-4 py-3">Php 120,000</td>
+                    <td class="px-8 py-2">Paid</td>
+                    </tr>   
+                    <tr class="border-b dark:border-gray-700">
+                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
+                    <td class="px-4 py-3">CSB Fee</td>
+                    <td class="px-4 py-3">CCS</td>
+                    <td class="px-4 py-3">01/01/2023</td>
+                    <td class="px-4 py-3">10:11</td>
+                    <td class="px-4 py-3">2022-2023</td>
+                    <td class="px-4 py-3">1st Semester</td>
+                    <td class="px-4 py-3">Php 120,000</td>
+                    <td class="px-8 py-2">Paid</td>
+                    </tr>   
                     </tbody>
                 </table>
             </div>
@@ -142,7 +139,6 @@
             </nav>
         </div>
     </div>
-</div>
     </section>
     </main>
 

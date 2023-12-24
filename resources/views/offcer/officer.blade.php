@@ -59,51 +59,55 @@
         <div class="px-4 pt-6 2xl:px-0 max-w-screen-xl mx-auto">
          <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
 
-         <!-- Activity Card -->
-         <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6    dark:bg-gray-800">
-            <div class="items-center justify-between lg:flex mb-10">
-           <div class="mb-4 lg:mb-0">
-             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Recent Collection</h3>
-             <span class="text-base font-normal text-gray-500 dark:text-gray-400">This is a list of latest collection this semester</span>
-           </div>
-           <div class="items-center sm:flex">
-             <div class="flex items-center">
-               <button id="dropdownDefault" data-dropdown-toggle="dropdown"
-                 class="mb-4 sm:mb-0 mr-4 inline-flex items-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                 type="button">
-                 Filter by status
-                 <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                 </svg>
-               </button>
-               <!-- Dropdown menu -->
-               <div id="dropdown" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
-                 <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">
-                   Category
-                 </h6>
-                 <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
-                   <li class="flex items-center">
-                     <input id="apple" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-             
-                     <label for="apple" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-                       Paid
-                     </label>
-                   </li>
-             
-                   <li class="flex items-center">
-                     <input id="fitbit" type="checkbox" value="" checked class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-             
-                     <label for="fitbit" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-                        Returned
-                     </label>
-                   </li>
-                 </ul>
-               </div>
-             </div>
+      <!-- Activity Card -->
+      <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+    <div class="items-center justify-between lg:flex mb-10">
+        <div class="mb-4 lg:mb-0">
+            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Recent Collection</h3>
+            <span class="text-base font-normal text-gray-500 dark:text-gray-400">This is a list of the latest collection this semester</span>
+        </div>
+        <div class="items-center sm:flex">
+            <div class="px-4 pt-6 2xl:px-0 max-w-screen-xl mx-auto">
+                <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+                    class="mb-4 sm:mb-0 mr-4 inline-flex items-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                    type="button">
+                    Filter by status
+                    <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+                    <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">
+                        Category
+                    </h6>
+                    <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+                        <li class="flex items-center">
+                            <input id="apple" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
 
-           </div>
-         </div>
+                            <label for="apple"
+                                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                                Paid
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="fitbit" type="checkbox" value="" checked
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+                            <label for="fitbit"
+                                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                                Returned
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
          <!-- Table -->
          <div class="flex flex-col mt-6">
             <div class="overflow-x-auto rounded-lg">
@@ -188,17 +192,22 @@
          </div>
       <!--Tabs widget -->
       <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
-         <h3 class="flex items-center mb-4 text-lg font-semibold text-gray-900 dark:text-white">Recent  CSC Projects
-         <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button"><svg class="w-4 h-4 ml-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
-         </h3>
+  <h3 class="flex items-center mb-4 text-lg font-semibold text-gray-900 dark:text-white">Recent CSC Projects
+    <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button">
+      <svg class="w-4 h-4 ml-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+      </svg>
+      <span class="sr-only">Show information</span>
+    </button>
+  </h3>
 
-         <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
-             <li class="w-full">
-                 <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">List of Projects</button>
-             </li>
-         </ul>
-         <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
-             <div class="hidden pt-4" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+  <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
+    <li class="w-full">
+      <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">List of Projects</button>
+    </li>
+  </ul>
+  <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
+    <div class="hidden pt-4" id="faq" role="tabpanel" aria-labelledby="faq-tab">
                <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
                  <li class="py-3 sm:py-4">
                    <div class="flex items-center justify-between">
@@ -207,6 +216,7 @@
                          <p class="font-medium text-gray-900 truncate dark:text-white">
                            Palaro Fee
                         </p>
+
                          <div class="flex items-center justify-end flex-1 text-sm text-green-500 dark:text-green-400">
                            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="date-double-check" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M3,9H21a0,0,0,0,1,0,0V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V9A0,0,0,0,1,3,9Z" style="fill: #b1e9f2; stroke-width: 2;"></path><polyline id="primary" points="7 15 9 17 13 13" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline><path id="primary-2" data-name="primary" d="M20,21H4a1,1,0,0,1-1-1V9H21V20A1,1,0,0,1,20,21ZM21,5a1,1,0,0,0-1-1H4A1,1,0,0,0,3,5V9H21ZM16,3V6M8,3V6m5,11,4-4" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg>                             <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
                            <span class="ml-2 text-gray-500">01/01/23</span>
