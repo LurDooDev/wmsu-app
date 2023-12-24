@@ -69,9 +69,6 @@ Route::middleware(['auth', 'user-access:officer'])->group(function () {
     // Student Routes
     Route::get('/officer/students', [StudentController::class, 'index'])->name('officer.students');
 
-    // Audit Routes
-    Route::get('/officer/audit-log', [AuditController::class, 'index'])->name('officer.audit');
-
     // Local Fee Route
     Route::get('/officier/fees/local', [LocalFeeController::class, 'index'])->name('officer.local.fees');
 
@@ -91,6 +88,9 @@ Route::middleware(['auth', 'user-access:collector'])->group(function () {
 
     // Payment Records Routes
     Route::get('/collector/payment/records', [PaymentController::class, 'indexRecords'])->name('collector.payment.records');
+
+    // Student Routes
+    Route::get('/collector/students', [StudentController::class, 'index'])->name('collector.students');
 
     // User Management Route
     Route::get('/collector/users', [UserController::class, 'index'])->name('collector.users');
