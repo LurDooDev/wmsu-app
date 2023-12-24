@@ -125,6 +125,9 @@
                          Transaction
                        </th>
                        <th scope="col" class="p-4 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-white">
+                        CSC Fee
+                      </th>
+                       <th scope="col" class="p-4 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-white">
                          Date & Time
                        </th>
                        <th scope="col" class="p-4 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-white">
@@ -137,6 +140,9 @@
                    </thead>
                    <tbody class="bg-white dark:bg-gray-800">                       <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white">
                          Payment from <span class="font-semibold">Alphabet LLC</span>
+                       </td>
+                       <td class="p-4 text-sm font-semibold text-gray-900 whitespace-nowrap dark:text-white">
+                        Php 200
                        </td>
                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
                          Mar 23 ,2021
@@ -152,6 +158,9 @@
                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white">
                          Payment from <span class="font-semibold">Bonnie Green</span>
                        </td>
+                       <td class="p-4 text-sm font-semibold text-gray-900 whitespace-nowrap dark:text-white">
+                        Php 200
+                       </td>
                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
                          Mar 23 ,2021
                        </td>
@@ -166,6 +175,9 @@
                         <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white">
                           Returned by <span class="font-semibold">Ye Boi</span>
                         </td>
+                        <td class="p-4 text-sm font-semibold text-gray-900 whitespace-nowrap dark:text-white">
+                           Php 200
+                          </td>
                         <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
                           Mar 23 ,2021
                         </td>
