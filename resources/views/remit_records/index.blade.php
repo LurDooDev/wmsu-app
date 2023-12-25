@@ -97,7 +97,7 @@
                     </thead>
                     <tbody>
                         <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
                             <td class="px-4 py-3">CSB fee</td>
                             <td class="px-4 py-3">CCS</td>
                             <td class="px-4 py-3">01-01-2022</td>
