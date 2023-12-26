@@ -86,8 +86,8 @@
                                 <td class="py-3 px-4 text-sm text-gray-700 dark:text-gray-400">mcloving.gmail.com</td>
                                 <td class="py-3 px-4 text-sm text-gray-700 dark:text-gray-400">1std Year</td>
                                 <td class="py-3 px-4 text-sm font-medium flex space-x-2">
-                                    <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-500">Edit</a>
-                                    <a href="#" class="text-red-600 dark:text-red-400 hover:text-red-900 dark:hover:text-red-500">Delete</a>
+                                    <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-500">Pay</a>
+                                    <a href="#" class="text-red-600 dark:text-red-400 hover:text-red-900 dark:hover:text-red-500">Edit</a>
                                 </td>
                             </tr>
                             <!-- Add more rows as needed -->
