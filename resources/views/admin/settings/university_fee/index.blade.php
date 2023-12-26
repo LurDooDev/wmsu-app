@@ -46,7 +46,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
+                <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0" data-modal-target="universityfee-modal" data-modal-toggle="universityfee-modal">
                     <button type="button" class="flex items-center justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">
                         <svg class="h-3.5 w-3.5 mr-2" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
@@ -63,6 +63,7 @@
                         <tr>
                             <th scope="col" class="px-4 py-3">ID</th>
                             <th scope="col" class="px-4 py-3">Fees Name</th>
+                            <th scope="col" class="px-4 py-3">Semester</th>
                             <th scope="col" class="px-4 py-3">Amount</th>
                             <th scope="col" class="px-4 py-3">Start Date</th>
                             <th scope="col" class="px-4 py-3">End Date</th>
@@ -75,6 +76,7 @@
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
                             <td class="px-4 py-3">CSB Fee</td>
+                            <td class="px-4 py-3">1st Semester</td>
                             <td class="px-4 py-3">250</td>
                             <td class="px-4 py-3">April 1, 2023</td>
                             <td class="px-4 py-3">April 30, 2023</td>
@@ -101,6 +103,7 @@
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
                             <td class="px-4 py-3">CSC Fee</td>
+                            <td class="px-4 py-3">2nd Semester</td>
                             <td class="px-4 py-3">250</td>
                             <td class="px-4 py-3">May 1, 2023</td>
                             <td class="px-4 py-3">May 30, 2023</td>
@@ -177,12 +180,12 @@
 
 
 <!-- Main modal -->
-<div id="crud-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-full">
+<div id="universityfee-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-full">
     <div class="relative p-8 w-full max-w-6xl max-h-screen flex flex-col">
         <!-- Modal content -->
         <div class="relative p-8 bg-white rounded-lg shadow dark:bg-gray-800 flex-1">
             <!-- Close Button - Upper Right Corner -->
-            <button type="button" class="absolute top-4 right-4 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-2 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="updateProductModal">
+            <button type="button" class="absolute top-4 right-4 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-2 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="universityfee-modal>
                 <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <span class="sr-only">Close modal</span>
             </button>
@@ -196,7 +199,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount</label>
-                        <input type="number" value="399" name="amount" id="amount" class="input-field-lg w-full" placeholder="$299">
+                        <input type="number"  name="amount" id="amount" class="input-field-lg w-full" placeholder="P300">
                     </div>
                 </form>
             </div>
@@ -232,7 +235,7 @@
             </div>
             <!-- Save Fees Button - Bottom Section -->
             <div class="mt-auto flex items-center justify-end">
-                <button type="submit" class="btn-primary">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                     Save Fees
                 </button>
             </div>
