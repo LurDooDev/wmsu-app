@@ -180,7 +180,7 @@
 
 <!-- Main modal -->
 <div id="universityfee-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-full">
-    <div class="relative p-8 w-full max-w-6xl max-h-screen flex flex-col">
+    <div class="relative p-8 w-full max-w-3xl max-h-screen flex flex-col">
         <!-- Modal content -->
         <div class="relative p-8 bg-white rounded-lg shadow dark:bg-gray-800 flex-1">
             <!-- Close Button - Upper Right Corner -->
