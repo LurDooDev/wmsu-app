@@ -2,12 +2,13 @@
 @include('layouts.sidebar')
 
 <main class="p-4 sm:ml-64 pt-20 sm:pt-4 h-auto">
-    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+    <div class="p-4">
+      <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
 
-      <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-4 max-w-full">
+      <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-4 mt-4 max-w-full">
             
             <!-- First Section -->
-            <div class="col-span-1 items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+            <div class="col-span-1 items-center justify-between p-4 bg-white border ml-4 border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800">
                 <div class="w-full">
                     <h3 class="text-base font-normal text-gray-500 dark:text-gray-400">Total Collection</h3>
                     <span class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">Php 5,250</span>
@@ -43,7 +44,7 @@
           </div>
 
             <!-- Fourth Section -->
-            <div class="col-span-1 p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+            <div class="col-span-1 p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800 mr-4">
                <div class="w-full">
                   <h3 class="text-base font-normal text-gray-500 dark:text-gray-400">CSC Projects</h3>
                   <span class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white mb-5">Php 2,340</span>
@@ -60,7 +61,7 @@
          <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
 
       <!-- Activity Card -->
-      <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+      <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 ml-4 mb-5 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
     <div class="items-center justify-between lg:flex mb-10">
         <div class="mb-4 lg:mb-0">
             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Recent Collection</h3>
@@ -107,7 +108,7 @@
             </div>
         </div>
     </div>
-</div>
+
          <!-- Table -->
          <div class="flex flex-col mt-6">
             <div class="overflow-x-auto rounded-lg">
@@ -191,15 +192,18 @@
          </div>
          </div>
       <!--Tabs widget -->
-      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800 mb-5">
   <h3 class="flex items-center mb-4 text-lg font-semibold text-gray-900 dark:text-white">Recent CSC Projects
-    <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button">
-      <svg class="w-4 h-4 ml-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-      </svg>
-      <span class="sr-only">Show information</span>
-    </button>
-  </h3>
+    <svg fill="#000000" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="margin-left: 5px;">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <g>
+          <path d="M2,9H9V2H2ZM4,4H7V7H4Zm6,7,5,8,5-8Zm8-9H11V9h7ZM16,7H13V4h3ZM2,18H9V11H2Zm2-5H7v3H4Z"></path>
+        </g>
+      </g>
+    </svg>
+      </h3>
 
   <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
     <li class="w-full">
