@@ -97,7 +97,7 @@
                     </thead>
                     <tbody>
                         <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
                             <td class="px-4 py-3">CSB fee</td>
                             <td class="px-4 py-3">CCS</td>
                             <td class="px-4 py-3">01-01-2022</td>
@@ -105,11 +105,11 @@
                             <td class="px-4 py-3">2022-2023</td>
                             <td class="px-4 py-3">1st Semester</td>
                             <td class="px-4 py-3">P70</td>
-                            <td class="px-4 py-3">Paid</td>
+                            <td class="px-4 py-3">Remitted</td>
                             </td>
                         </tr>
                         <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
                             <td class="px-4 py-3">CCS fee</td>
                             <td class="px-4 py-3">CCS</td>
                             <td class="px-4 py-3">01-01-2023</td>
@@ -117,7 +117,7 @@
                             <td class="px-4 py-3">2022-2023</td>
                             <td class="px-4 py-3">1st Semester</td>
                             <td class="px-4 py-3">P250</td>
-                            <td class="px-4 py-3">Paid</td>
+                            <td class="px-4 py-3">Not Remitted</td>
                             </td>
                         </tr>
                     </tbody>

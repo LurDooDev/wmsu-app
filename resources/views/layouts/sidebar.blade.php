@@ -40,7 +40,7 @@
 </nav>
 
 <aside class="fixed md:pt-0 sm:pt-0 pt-14 top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidenav" id="drawer-navigation">
-   <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+   <div class="h-full px-3 py-4  overflow-y: auto; bg-gray-50 dark:bg-gray-800">
       <img src="/images/logo.jpg" class="w-135 h-100" alt="logo">
       <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
       <ul class="space-y-4 font-medium">
