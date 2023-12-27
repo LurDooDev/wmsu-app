@@ -92,7 +92,7 @@
                             <th scope="col" class="px-4 py-3">School Year</th>
                             <th scope="col" class="px-4 py-3">Semester</th>
                             <th scope="col" class="px-4 py-3">Amount</th>
-                            <th scope="col" class="text-center px-4 py-3">Status</th>
+                            <th scope="col" class="px-4 py-3">Status</th>
                         </tr>
                     </thead>
                     <tbody>
