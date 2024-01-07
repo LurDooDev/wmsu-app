@@ -62,9 +62,15 @@ Route::middleware(['auth', 'user-access:officer'])->group(function () {
 
     // Payment Routes
     Route::get('/officer/payments', [PaymentController::class, 'index'])->name('officer.payments');
+    Route::get('/officer/paymentNext', [PaymentController::class, 'paymentNext'])->name('officer.paymentNext');
+
+
 
     // Payment Records Routes
     Route::get('/officer/payment/records', [PaymentController::class, 'indexRecords'])->name('officer.payment.records');
+  
+
+
 
     // Student Routes
     Route::get('/officer/students', [StudentController::class, 'index'])->name('officer.students');
