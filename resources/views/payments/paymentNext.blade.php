@@ -3,8 +3,8 @@
     @include('layouts.sidebar')
 
     <!--Main-->
-    <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
-    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-1">
+    <main class="p-11 sm:ml-64 pt-20 sm:pt-4 h-auto">
+    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-6">
 
     <div class="mx-5 px-3 ">
         <!-- Start coding here -->
@@ -38,104 +38,144 @@
                     </li>
                 </ol>
             </nav>
+            <div class="flex">
+  <!-- Left Content -->
+  <div class="w-1/2 border-b-2 border-gray-300 pb-4 mb-6 ml-5">
+    <h2 class="text-2xl font-bold mb-4 mt-3">Bryan The Dunker</h2>
+    <div class="text-gray-700 text-2xl mb-2 mt-3">Western Mindanao State University</div>
+  </div>
+  
+  <!-- Right Content -->
+  <div class="w-1/2 border-b-2 border-gray-300 pb-4 mb-6 ml-auto mr-6">
+    <div class="text-gray-700 flex-shrink-0 text-right ">
+      <div class="font-bold text-xl mb-2 mt-3">Student ID: 201503664</div>
+      <div class="text-xl">College of Computing Studies</div>
+      <div class="text-xl">Enrolled in 2024-2025</div>
+    </div>
+  </div>
+</div>
             <!--End Breadcrumb -->
        <!--Table Header -->
-<div class="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-4 p-4">
-    <div class="w-full md:w-4/6">
-        <form class="flex items-center">
-            <label for="simple-search" class="sr-only">Search</label>
-            <div class="relative w-full">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg aria-hidden="true" class="w-4 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 h-11"  placeholder="Search" required="">
-            </div>
-        </form>
-    </div>
-</div>
-<!--End Table Header -->
 
+   
             <!--Table-->
             <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-4 py-3">Name</th>
-                            <th scope="col" class="px-4 py-3">Student ID</th>
-                            <th scope="col" class="px-4 py-3">College</th>
-                            <th scope="col" class="px-4 py-3">Course</th>
-                            <th scope="col" class="text-center px-4 py-3">Action</th>
+                            <th scope="col" class="px-4 py-3">Academic Year</th>
+                            <th scope="col" class="px-4 py-3">Semester</th>
+                            <th scope="col" class="px-4 py-3">Payment Name</th>
+                            <th scope="col" class="px-4 py-3">Payment Type</th>
+                            <th scope="col" class="px-4 py-3">Amount</th>
+                            <th scope="col" class="px-4 py-3">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                     <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bryan The Dunker</th>
-                            <td class="px-4 py-3">201503664</td>
-                            <td class="px-4 py-3">CCS</td>
-                            <td class="px-4 py-3">Computer Science</td>
-                            <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                <div class="flex justify-center items-center space-x-4">
-                                <button type="button" class="py-2 px-3 flex items-center justify-center text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-    onclick="window.location='{{ route('officer.paymentNext') }}'">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd"
-            d="M10 3a1 1 0 00-1 1v5H4a1 1 0 100 2h5v5a1 1 0 102 0v-5h5a1 1 0 100-2h-5V4a1 1 0 00-1-1z"
-            clip-rule="evenodd" />
-    </svg>
-</button>
-
-
-                        </div>
-                 </td>
+                            <th scope="row" class="px-4 py-3 ">2023</th>
+                            <td class="px-4 py-3">1st Semester</td>
+                            <td class="px-4 py-3">CSB Fee</td>
+                            <td class="px-4 py-3">University Fee</td>
+                            <td class="px-4 py-3">500</td>
+                            <td class="px-4 py-3">Paid</td>
+                        
+            </tr>
+            <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 ">2023</th>
+                            <td class="px-4 py-3">2nd Semester</td>
+                            <td class="px-4 py-3">CCS Fee</td>
+                            <td class="px-4 py-3">Local Fee</td>
+                            <td class="px-4 py-3">200</td>
+                            <td class="px-4 py-3">Paid</td>
+                    
+            </td> 
             </tr>
         </table>
-            </div>
+
+        <div class="w-full mb-6 mt-7 border-t-4 border-gray-300 pt-4">
+    <h6 class="text-1xl font-medium ml-3 mb-5 mr-3 ">University Fee</h6>
+    <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-4 py-3">Select</th>
+                <th scope="col" class="px-4 py-3">Id</th>
+                <th scope="col" class="px-4 py-3">Payment Name</th>
+                <th scope="col" class="px-4 py-3">Semester</th>
+                <th scope="col" class="px-4 py-3">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="px-4 py-3"><input type="checkbox"></td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">University Fee</td>
+                <td class="px-4 py-3">1st Semester</td>
+                <td class="px-4 py-3">350</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-3"><input type="checkbox"></td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">University Fee</td>
+                <td class="px-4 py-3">1st Semester</td>
+                <td class="px-4 py-3">150</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-3"><input type="checkbox"></td>
+                <td class="px-4 py-3">3</td>
+                <td class="px-4 py-3">Universtiy Fee</td>
+                <td class="px-4 py-3">2nd Semester</td>
+                <td class="px-4 py-3">550</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="w-full mb-6 mt-7 border-t-4 border-gray-300 pt-4">
+    <h6 class="text-1xl font-medium ml-3 mb-5 mr-3 ">Local Fee</h6>
+    <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-4 py-3">Select</th>
+                <th scope="col" class="px-4 py-3">Id</th>
+                <th scope="col" class="px-4 py-3">Payment Name</th>
+                <th scope="col" class="px-4 py-3">Semester</th>
+                <th scope="col" class="px-4 py-3">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="px-4 py-3"><input type="checkbox"></td>
+                <td class="px-4 py-3">1</td>
+                <td class="px-4 py-3">Local Fee</td>
+                <td class="px-4 py-3">1st Semester</td>
+                <td class="px-4 py-3">350</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-3"><input type="checkbox"></td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">Local Fee</td>
+                <td class="px-4 py-3">1st Semester</td>
+                <td class="px-4 py-3">150</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-3"><input type="checkbox"></td>
+                <td class="px-4 py-3">3</td>
+                <td class="px-4 py-3">Local Fee</td>
+                <td class="px-4 py-3">2nd Semester</td>
+                <td class="px-4 py-3">550</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="flex justify-end mt-4 mr-4">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Pay Now
+                            </button>
+                        </div>
+</div>
+
             <!--End Table-->
-            <!--Table Pagination-->
-            <nav class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
-                <span class="text-sm font-normal text-gray-500 dark:text-gray-400">
-                    Showing
-                    <span class="font-semibold text-gray-900 dark:text-white">1-10</span>
-                    of
-                    <span class="font-semibold text-gray-900 dark:text-white">1000</span>
-                </span>
-                <ul class="inline-flex items-stretch -space-x-px">
-                    <li>
-                        <a href="#" class="flex items-center justify-center h-full py-1.5 px-3 ml-0 text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Previous</span>
-                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-current="page" class="flex items-center justify-center text-sm z-10 py-2 px-3 leading-tight text-red-600 bg-red-50 border border-red-300 hover:bg-red-100 hover:text-red-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">...</a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">100</a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Next</span>
-                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!--End Table Pagination-->
+
         </div>
     </div>
     </section>
@@ -143,4 +183,4 @@
     <!--End Main-->
 
 
-@include('layouts.footer')
+@include('layouts.footer') 
