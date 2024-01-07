@@ -15,6 +15,10 @@ class PaymentController extends Controller
         return view('payments.index');
     }
 
+    public function paymentNext()
+    {
+        return view('payments.paymentNext');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -31,6 +35,7 @@ class PaymentController extends Controller
         //
     }
 
+ 
     /**
      * Store a newly created resource in storage.
      */
