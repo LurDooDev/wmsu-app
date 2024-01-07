@@ -61,7 +61,7 @@
             <!--Table-->
             <div class="overflow-x-auto">
                 <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <thead class="text-sm text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-4 py-3">Academic Year</th>
                             <th scope="col" class="px-4 py-3">Semester</th>
@@ -96,7 +96,7 @@
         <div class="w-full mb-6 mt-7 border-t-4 border-gray-300 pt-4">
     <h6 class="text-1xl font-medium ml-3 mb-5 mr-3 ">University Fee</h6>
     <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <thead class="text-sm text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-4 py-3">Select</th>
                 <th scope="col" class="px-4 py-3">Id</th>
@@ -134,7 +134,7 @@
 <div class="w-full mb-6 mt-7 border-t-4 border-gray-300 pt-4">
     <h6 class="text-1xl font-medium ml-3 mb-5 mr-3 ">Local Fee</h6>
     <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <thead class="text-sm text-gray-700 u bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-4 py-3">Select</th>
                 <th scope="col" class="px-4 py-3">Id</th>
