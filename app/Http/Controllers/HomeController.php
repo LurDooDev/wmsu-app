@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function officerHome()
     {
-        return view('offcer.officer');
+        return view('officer.officer');
     } 
   
     /**
