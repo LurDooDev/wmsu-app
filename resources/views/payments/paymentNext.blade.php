@@ -54,8 +54,7 @@
     </div>
   </div>
 </div>
-            <!--End Breadcrumb -->
-       <!--Table Header -->
+
 
    
             <!--Table-->
@@ -168,7 +167,8 @@
         </tbody>
     </table>
     <div class="flex justify-end mt-4 mr-4">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
+    onclick="window.location='{{ route('officer.paymentReceipt') }}'">
                                 Pay Now
                             </button>
                         </div>
