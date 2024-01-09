@@ -46,13 +46,9 @@
                     </li>
                 </ol>
             </nav>
-
 <div class="overflow-hidden p-3 space-y-3">
 <div class="sm:flex">
-
 <div class="space-y-3 text-left sm:ml-auto sm:text-right">
-
-
 </div>
 </div>
 <div class="sm:w-72">
