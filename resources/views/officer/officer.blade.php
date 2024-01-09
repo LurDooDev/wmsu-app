@@ -61,7 +61,7 @@
          <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
 
       <!-- Activity Card -->
-      <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 ml-4 mb-5 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+      <div class="sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 ml-4 mb-5 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 dark:bg-gray-800">
     <div class="items-center justify-between lg:flex mb-10">
         <div class="mb-4 lg:mb-0">
             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Recent Collection</h3>
@@ -111,7 +111,7 @@
 
          <!-- Table -->
          <div class="flex flex-col mt-6">
-            <div class="overflow-x-auto rounded-lg">
+            <div class="overflow-x-auto rounded-md">
               <div class="inline-block min-w-full align-middle">
                 <div class="overflow-hidden shadow sm:rounded-lg">
                   <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600">

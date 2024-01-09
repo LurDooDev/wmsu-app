@@ -54,9 +54,6 @@
     </div>
   </div>
 </div>
-
-
-   
             <!--Table-->
             <div class="overflow-x-auto">
                 <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
@@ -119,13 +116,7 @@
                 <td class="px-4 py-3">1st Semester</td>
                 <td class="px-4 py-3">150</td>
             </tr>
-            <tr>
-                <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3">3</td>
-                <td class="px-4 py-3">Universtiy Fee</td>
-                <td class="px-4 py-3">2nd Semester</td>
-                <td class="px-4 py-3">550</td>
-            </tr>
+
         </tbody>
     </table>
 </div>
@@ -157,13 +148,7 @@
                 <td class="px-4 py-3">1st Semester</td>
                 <td class="px-4 py-3">150</td>
             </tr>
-            <tr>
-                <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3">3</td>
-                <td class="px-4 py-3">Local Fee</td>
-                <td class="px-4 py-3">2nd Semester</td>
-                <td class="px-4 py-3">550</td>
-            </tr>
+    
         </tbody>
     </table>
     <div class="flex justify-end mt-4 mr-4">
