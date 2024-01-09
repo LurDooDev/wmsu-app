@@ -114,6 +114,8 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     // Admin Dashboard Routes
     Route::get('/admin', [HomeController::class, 'adminHome'])->name('admin.home');
 
+
+
     // Colleges Routes
     Route::get('/admin/colleges', [CollegeController::class, 'index'])->name('admin.colleges');
 

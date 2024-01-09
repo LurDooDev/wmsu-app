@@ -47,66 +47,33 @@
                 </ol>
             </nav>
 
-            <div class="block justify-between items-center p-4 my-6 mx-4 bg-white rounded-2xl shadow-xl shadow-gray-200 sm:flex">
-<div class="flex items-center mb-3 sm:divide-x sm:divide-gray-100 sm:mb-0">
-<form class="flex-auto lg:pr-3" action="#" method="GET">
-<label for="invoice-search" class="sr-only">Search</label>
-<div class="relative mt-1 sm:w-64 md:w-96">
-<input type="text" name="email" id="invoice-search" class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-2 focus:ring-fuchsia-50 focus:border-fuchsia-300 block w-full p-2.5" placeholder="Search for invoice number" />
-</div>
-</form>
+            
 <div class="flex pl-2 ml-auto space-x-1">
-<a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
-<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
-</svg>
-</a>
-<a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
-<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
-</svg>
-</a>
+
+
 </div>
 </div>
 <div class="items-center space-y-4 sm:inline-flex sm:space-x-4 sm:space-y-0">
 <div>
-<a href="#" class="inline-flex justify-center items-center py-2 px-3 w-full text-sm font-medium text-center text-white rounded-lg bg-gradient-to-br from-pink-500 to-voilet-500 shadow-md shadow-gray-300 hover:scale-[1.02] transition-transform sm:w-auto">
-<svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-</svg>
-Download Invoice
-</a>
+
 </div>
 <div>
-<a href="#" class="inline-flex justify-center items-center py-2 px-3 w-full text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:scale-[1.02] transition-transformsm:w-auto">
-<svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path>
-</svg>
-Print
-</a>
+
 </div>
 </div>
 </div>
 <div class="flex items-center">
-<svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-</svg>
-<span class="ml-1 text-sm font-medium text-gray-400 md:ml-2" aria-current="page">Invoice</span
-                      >
+          
 </div>
 </li>
 </ol>
 </nav>
-<h1 class="text-xl font-semibold text-gray-900 sm:text-2xl">
-Invoice
-</h1>
-</div>
-<div class="bg-white shadow-lg shadow-gray-200 rounded-2xl p-4 col-span-12 2xl:col-start-3 2xl:col-span-8 md:mx-6 lg:my-6">
+
+
+<div class="bg-white shadow-lg shadow-gray-200 rounded-1xl p-4 col-span-12 2xl:col-start-3 2xl:col-span-8 md:mx-6 lg:my-6">
 <div class="overflow-hidden p-4 space-y-6">
 <div class="sm:flex">
-<div class="mb-5 text-2xl font-bold sm:text-3xl sm:mb-0">
-Invoice #0472
-</div>
+
 <div class="space-y-3 text-left sm:ml-auto sm:text-right">
 <svg class="w-10 h-10 sm:ml-auto" viewBox="0 0 39 46" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M38.1622 1.47093L22.6807 5.26078C22.5339 5.29495 22.3817 5.2995 22.2331 5.27414C22.0844 5.24879 21.9424 5.19404 21.8152 5.11312L14.4967 0.331871C14.3629 0.244902 14.2118 0.187926 14.0539 0.164864C13.896 0.141802 13.7349 0.153201 13.5819 0.198277L0.915185 3.92484C0.799036 3.95271 0.695356 4.01814 0.620271 4.11096C0.545186 4.20379 0.502904 4.3188 0.5 4.43812V12.0178L13.5819 8.17171C13.7349 8.12664 13.896 8.11524 14.0539 8.1383C14.2118 8.16136 14.3629 8.21834 14.4967 8.30531L21.8152 13.0795C21.941 13.1635 22.0831 13.2201 22.2322 13.2455C22.3814 13.271 22.5342 13.2647 22.6807 13.2272L38.5 9.36V1.72406C38.4982 1.65256 38.4684 1.5846 38.4172 1.53469C38.3659 1.48477 38.2971 1.45685 38.2256 1.45687L38.1622 1.47093Z" fill="#FF7F66" />
@@ -140,6 +107,7 @@ Bill to
 Bergside Inc., LOUISVILLE, Selby 3864 Johnson Street, United
 States of America VAT Code: AA-1234567890
 </address>
+
 </div>
 
 <div class="flex flex-col my-8">
@@ -289,6 +257,12 @@ $64.00
 Total
 </div>
 <div class="text-base font-bold text-gray-900">$351.00</div>
+<div><a href="#" class="inline-flex justify-center items-center py-2 px-3 w-full text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:scale-[1.02] transition-transformsm:w-auto">
+    <svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path>
+    </svg>
+    Print
+    </a> </div>
 </div>
 </div>
 </div>
