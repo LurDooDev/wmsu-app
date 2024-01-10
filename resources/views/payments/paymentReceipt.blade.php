@@ -46,178 +46,92 @@
                     </li>
                 </ol>
             </nav>
-<div class="overflow-hidden p-3 space-y-3">
-<div class="sm:flex">
-<div class="space-y-3 text-left sm:ml-auto sm:text-right">
-</div>
-</div>
-<div class="sm:w-72">
-<div class="mb-4 text-base text-gray-900 uppercase">
-  <span style="font-weight: bold;">Bill to:</span> <span style="font-weight: 700;">Bryan the Dunker</span>
-</div>
-
-<address class="text-base font-normal text-gray-500">
-Bergside Inc., LOUISVILLE, Selby 3864 Johnson Street, United
-States of America VAT Code: AA-1234567890
-</address>
-</div>
-<div class="flex flex-col my-8">
-
-<div class="overflow-x-auto border-b border-gray-200">
-
-<div class="inline-block min-w-full align-middle">
-<div class="overflow-hidden shadow-lg">
-<table class="min-w-full divide-y divide-gray-200">
-<thead class="text-gray-900 bg-gray-50">
-<tr>
-<th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
-Item
-</th>
-<th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
-Price
-</th>
-<th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
-Qty
-</th>
-<th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
-Off
-</th>
-<th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
-Total
-</th>
-</tr>
-</thead>
-<tbody class="text-gray-900 bg-white">
-<tr>
-<td class="p-4 text-sm font-normal whitespace-nowrap">
-<div class="text-base font-semibold">
-Pixel Design System
-</div>
-<div class="text-sm font-normal text-gray-500">
-Html components
-</div>
-</td>
-<td class="p-4 text-base font-normal text-gray-500 whitespace-nowrap">
-$128.00
-</td>
-<td class="p-4 text-base font-semibold text-gray-900 whitespace-nowrap">
-1
-</td>
-<td class="p-4 text-base font-normal whitespace-nowrap">
-50%
-</td>
-<td class="p-4 text-base font-semibold whitespace-nowrap">
-$64.00
-</td>
-</tr>
-<tr>
-<td class="p-4 text-sm font-normal whitespace-nowrap">
-<div class="text-base font-semibold">
-Volt Dashboard Template
-</div>
-<div class="text-sm font-normal text-gray-500">
-Tailwind template
-</div>
-</td>
-<td class="p-4 text-base font-normal text-gray-500 whitespace-nowrap">
-$69.00
-</td>
-<td class="p-4 text-base font-semibold text-gray-900 whitespace-nowrap">
-1
-</td>
-<td class="p-4 text-base font-normal whitespace-nowrap">
-0%
-</td>
-<td class="p-4 text-base font-semibold whitespace-nowrap">
-$69.00
-</td>
-</tr>
-<tr>
-<td class="p-4 text-sm font-normal whitespace-nowrap">
-<div class="text-base font-semibold">
-Neumorphism UI
-</div>
-<div class="text-sm font-normal text-gray-500">
-Html template
-</div>
-</td>
-<td class="p-4 text-base font-normal text-gray-500 whitespace-nowrap">
-$69.00
-</td>
-<td class="p-4 text-base font-semibold text-gray-900 whitespace-nowrap">
-1
-</td>
-<td class="p-4 text-base font-normal whitespace-nowrap">
-0%
-</td>
-<td class="p-4 text-base font-semibold whitespace-nowrap">
-$69.00
-</td>
-</tr>
-<tr>
-<td class="p-4 text-sm font-normal whitespace-nowrap">
-<div class="text-base font-semibold">
-Glassmorphism UI
-</div>
-<div class="text-sm font-normal text-gray-500">
-Figma template
-</div>
-</td>
-<td class="p-4 text-base font-normal text-gray-500 whitespace-nowrap">
-$149.00
-</td>
-<td class="p-4 text-base font-semibold text-gray-900 whitespace-nowrap">
-1
-</td>
-<td class="p-4 text-base font-normal whitespace-nowrap">
-0%
-</td>
-<td class="p-4 text-base font-semibold whitespace-nowrap">
-$149.00
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="space-y-3 sm:text-right sm:ml-auto sm:w-72">
-<div class="flex justify-between">
-<div class="text-sm font-medium text-gray-500 uppercase">
-Subtotal
-</div>
-<div class="text-base font-medium text-gray-900">
-$415.00
-</div>
-</div>
-<div class="flex justify-between">
-<div class="text-sm font-medium text-gray-500 uppercase">
-Tax rate
-</div>
-<div class="text-base font-medium text-gray-900">5%</div>
-</div>
-<div class="flex justify-between">
-<div class="text-sm font-medium text-gray-500 uppercase">
-Discount
-</div>
-<div class="text-base font-medium text-gray-900">
-$64.00
-</div>
-</div>
-<div class="flex justify-between">
-<div class="text-base font-semibold text-gray-900 uppercase">
-Total
-</div>
-<div class="text-base font-bold text-gray-900">$351.00</div>
-<div><a href="#" class="inline-flex justify-center items-center py-2 px-3 w-full text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:scale-[1.02] transition-transformsm:w-auto">
-    <svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path>
-    </svg>
-    Print
-    </a> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
             
+            <div class="  border-b-2 p-6  border-gray-300">
+
+<div class="flex items-center justify-between gap-6 mb-5">
+    <div>
+        <h2 class="text-lg font-normal"><span class="font-bold">Invoice No: </span> 12345678</h2>
+        <h5 class="text-base font-normal"><span class="font-bold">Date: </span> 01/10/2024</h5>
+    </div>
+    <img src="" alt="">
+</div>
+<hr>
+<div class="flex flex-wrap items-center justify-between gap-6 mt-4">
+    <div>
+        <h4 class="text-base font-bold">Student Info:</h4>
+        <p class="text-2xl font-normal">
+        Bryan The Dunker <br>
+        Western Mindanao State University
+        </p>
+    </div>
+    <div class="text-end">
+        <h4 class="text-2xl font-bold">Student ID: 201503664</h4>
+        <p class="font-md font-normal">
+        College of Computing Studies<br>
+        Enrolled in 2024-2025
+        </p>
+    </div>
+</div>
+<div class="overflow-x-auto">
+    <table class="border-collapse table-auto w-full text-sm mt-9 whitespace-pre">
+        <thead>
+            <tr class="bg-gray-100">
+                <th class="p-4  text-lg font-medium text-start">Payment Name</th>
+                <th class="p-4  text-lg font-medium text-start">Payment Type</th>
+                <th class="p-4 text-lg font-medium text-start">Date</th>
+                <th class="p-4  pe-7 text-lg font-medium text-center">Time</th>
+                <th class="p-4  text-lg font-medium text-end">Academic Year</th>
+                <th class="p-4 ext-lg font-medium text-end">Semester</th>
+                <th class="p-4 text-lg font-medium text-end">Price</th>
+                <th class="p-4 text-lg font-medium text-end">Status</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white">
+            <tr>
+                <td class="p-4  text-base font-normal">CCS Fee</td>
+                <td class="p-4  text-base font-normal">Local Fee</td>
+                <td class="p-4  text-base font-normal">1/10/24</td>
+                <td class="p-4  text-base font-normal text-center">4:30 PM</td>
+                <td class="p-4  text-base font-normal text-end">2023-2024</td>
+                <td class="p-4  text-base font-normal text-end">2nd Semester</td>
+                <td class="p-4  text-base font-normal text-end">250</td>
+                <td class="p-4  text-base font-normal text-end">Paid</td>
+            </tr>
+            <tr>
+                <td class="p-4  text-base font-normal">CSB Fee</td>
+                <td class="p-4  text-base font-normal">University Fee</td>
+                <td class="p-4 text-base font-normal">2/10/24</td>
+                <td class="p-4  text-base font-normal text-center">8:30 PM</td>
+                <td class="p-4  text-base font-normal text-end">2023-2024</td>
+                <td class="p-4  text-base font-normal text-end">1st Semester</td>
+                <td class="p-4  text-base font-normal text-end">150</td>
+                <td class="p-4  text-base font-normal text-end">Paid</td>
+            </tr>
+
+            <tr>
+                <td colspan="10" class="p-4 text-base font-normal border text-end"><span class="pe-2 font-bold">Total Amount:</span>$1020</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div class="flex items-center justify-end gap-4 mt-4">
+        <a href="{{ route('officer.paymentNext') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800  font-bold py-2 px-4 rounded">Back</a>
+
+        <a href="{{ route('officer.payments') }}" class="text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded">New Payment</a>
+    </div>
+</div>
+
+    <div>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+            </section>
+    </main>
+    <!--End Main-->
+
+
+@include('layouts.footer') 

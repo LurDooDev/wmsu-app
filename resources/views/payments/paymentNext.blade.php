@@ -152,11 +152,13 @@
         </tbody>
     </table>
     <div class="flex justify-end mt-4 mr-4">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
-    onclick="window.location='{{ route('officer.paymentReceipt') }}'">
-                                Pay Now
-                            </button>
-                        </div>
+    <a href="{{ route('officer.payments') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
+            onclick="window.location='{{ route('officer.paymentReceipt') }}'">
+        Pay Now
+    </button>
+</div>
 </div>
 
             <!--End Table-->
