@@ -4,7 +4,7 @@
 
     <!--Main-->
     <main class="p-7 sm:ml-64 pt-20 sm:pt-4 h-auto">
-    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-6">
+    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-1">
 
     <div class="mx-5 px-3 ">
         <!-- Start coding here -->
@@ -25,7 +25,7 @@
                             <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                             </svg>
-                            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Payments</span>
+                            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Student Information</span>
                         </div>
                     </li>
                     <li aria-current="page">
@@ -33,7 +33,7 @@
                             <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                             </svg>
-                            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Payment Next</span>
+                            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Payment</span>
                         </div>
                     </li>
                 </ol>
@@ -42,12 +42,12 @@
   <!-- Left Content -->
   <div class="w-1/2 border-b-2 border-gray-300 pb-4 mb-6 ml-5">
     <h2 class="text-2xl font-bold mb-4 mt-3">Bryan The Dunker</h2>
-    <div class="text-gray-700 text-2xl mb-2 mt-3">Western Mindanao State University</div>
+    <div class=" text-2xl mb-2 mt-3">Western Mindanao State University</div>
   </div>
   
   <!-- Right Content -->
   <div class="w-1/2 border-b-2 border-gray-300 pb-4 mb-6 ml-auto mr-6">
-    <div class="text-gray-700 flex-shrink-0 text-right ">
+    <div class=" flex-shrink-0 text-right ">
       <div class="font-bold text-xl mb-2 mt-3">Student ID: 201503664</div>
       <div class="text-xl">College of Computing Studies</div>
       <div class="text-xl">Enrolled in 2024-2025</div>
@@ -56,34 +56,34 @@
 </div>
             <!--Table-->
             <div class="overflow-x-auto">
-                <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-sm text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <table class="w-full text-md text-left  ">
+                    <thead class="text-md   bg-gray-50 dark:bg-gray-700 text-md font-medium">
                         <tr>
-                            <th scope="col" class="px-4 py-3">Academic Year</th>
-                            <th scope="col" class="px-4 py-3">Semester</th>
-                            <th scope="col" class="px-4 py-3">Payment Name</th>
-                            <th scope="col" class="px-4 py-3">Payment Type</th>
-                            <th scope="col" class="px-4 py-3">Amount</th>
-                            <th scope="col" class="px-4 py-3">Status</th>
+                            <th scope="col" class="px-4 py-3 text-md font-medium">Academic Year</th>
+                            <th scope="col" class="px-4 py-3 text-md font-medium">Semester</th>
+                            <th scope="col" class="px-4 py-3 text-md font-medium">Payment Name</th>
+                            <th scope="col" class="px-4 py-3 text-md font-medium">Payment Type</th>
+                            <th scope="col" class="px-4 py-3 text-md font-medium">Amount</th>
+                            <th scope="col" class="px-4 py-3 text-md font-medium">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                     <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 ">2023</th>
-                            <td class="px-4 py-3">1st Semester</td>
-                            <td class="px-4 py-3">CSB Fee</td>
-                            <td class="px-4 py-3">University Fee</td>
-                            <td class="px-4 py-3">500</td>
-                            <td class="px-4 py-3">Paid</td>
+                            <th scope="row" class="px-4 py-3 text-md font-medium">2023</th>
+                            <td class="px-4 py-3 text-md font-medium">1st Semester</td>
+                            <td class="px-4 py-3 text-md font-medium">CSB Fee</td>
+                            <td class="px-4 py-3 text-md font-medium">University Fee</td>
+                            <td class="px-4 py-3 text-md font-medium">500</td>
+                            <td class="px-4 py-3 text-md font-medium">Paid</td>
                         
             </tr>
             <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 ">2023</th>
-                            <td class="px-4 py-3">2nd Semester</td>
-                            <td class="px-4 py-3">CCS Fee</td>
-                            <td class="px-4 py-3">Local Fee</td>
-                            <td class="px-4 py-3">200</td>
-                            <td class="px-4 py-3">Paid</td>
+                            <th scope="row" class="px-4 py-3 text-md font-medium">2023</th>
+                            <td class="px-4 py-3 text-md font-medium">2nd Semester</td>
+                            <td class="px-4 py-3 text-md font-medium">CCS Fee</td>
+                            <td class="px-4 py-3 text-md font-medium">Local Fee</td>
+                            <td class="px-4 py-3 text-md font-medium">200</td>
+                            <td class="px-4 py-3 text-md font-medium">Paid</td>
                     
             </td> 
             </tr>
@@ -91,30 +91,30 @@
 
         <div class="w-full mb-6 mt-7 border-t-4 border-gray-300 pt-4">
     <h6 class="text-1xl font-medium ml-3 mb-5 mr-3 ">University Fee</h6>
-    <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-sm text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-4 py-3">Select</th>
-                <th scope="col" class="px-4 py-3">Id</th>
-                <th scope="col" class="px-4 py-3">Payment Name</th>
-                <th scope="col" class="px-4 py-3">Semester</th>
-                <th scope="col" class="px-4 py-3">Amount</th>
+    <table class="w-full text-md text-left  ">
+        <thead class="text-md  bg-gray-50 dark:bg-gray-700 text-md font-medium">
+            <tr class = "border -b  dark:border-gray-700">
+                <th scope="col" class="px-4 py-3 text-md font-medium">Select</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Id</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Payment Name</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Semester</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Amount</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3">1</td>
-                <td class="px-4 py-3">University Fee</td>
-                <td class="px-4 py-3">1st Semester</td>
-                <td class="px-4 py-3">350</td>
+        <tr class="border-b dark:border-gray-700">
+                <td class="px-4 py-3 text-md font-medium" ><input type="checkbox"></td>
+                <td class="px-4 py-3 text-md font-medium">1</td>
+                <td class="px-4 py-3 text-md font-medium">University Fee</td>
+                <td class="px-4 py-3 text-md font-medium">1st Semester</td>
+                <td class="px-4 py-3 text-md font-medium">350</td>
             </tr>
-            <tr>
-                <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3">2</td>
-                <td class="px-4 py-3">University Fee</td>
-                <td class="px-4 py-3">1st Semester</td>
-                <td class="px-4 py-3">150</td>
+            <tr class="border-b dark:border-gray-700">
+                <td class="px-4 py-3 text-md font-medium"><input type="checkbox"></td>
+                <td class="px-4 py-3 text-md font-medium">2</td>
+                <td class="px-4 py-3 text-md font-medium">University Fee</td>
+                <td class="px-4 py-3 text-md font-medium">1st Semester</td>
+                <td class="px-4 py-3 text-md font-medium">150</td>
             </tr>
 
         </tbody>
@@ -123,30 +123,30 @@
 
 <div class="w-full mb-6 mt-7 border-t-4 border-gray-300 pt-4">
     <h6 class="text-1xl font-medium ml-3 mb-5 mr-3 ">Local Fee</h6>
-    <table class="w-full text-md text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-sm text-gray-700 u bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-4 py-3">Select</th>
-                <th scope="col" class="px-4 py-3">Id</th>
-                <th scope="col" class="px-4 py-3">Payment Name</th>
-                <th scope="col" class="px-4 py-3">Semester</th>
-                <th scope="col" class="px-4 py-3">Amount</th>
+    <table class="w-full text-md text-left ">
+        <thead class="text-md bg-gray-50 dark:bg-gray-700 text-md font-medium ">
+        <tr class="border-b dark:border-gray-700">
+                <th scope="col" class="px-4 py-3 text-md font-medium">Select</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Id</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Payment Name</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium ">Semester</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Amount</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+        <tr class="border-b dark:border-gray-700">
                 <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3">1</td>
-                <td class="px-4 py-3">Local Fee</td>
-                <td class="px-4 py-3">1st Semester</td>
-                <td class="px-4 py-3">350</td>
+                <td class="px-4 py-3 text-md font-medium">1</td>
+                <td class="px-4 py-3 text-md font-medium">Local Fee</td>
+                <td class="px-4 py-3 text-md font-medium">1st Semester</td>
+                <td class="px-4 py-3 text-md font-medium">350</td>
             </tr>
-            <tr>
+            <tr class="border-b dark:border-gray-700">
                 <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3">2</td>
-                <td class="px-4 py-3">Local Fee</td>
-                <td class="px-4 py-3">1st Semester</td>
-                <td class="px-4 py-3">150</td>
+                <td class="px-4 py-3 text-md font-medium">2</td>
+                <td class="px-4 py-3 text-md font-medium">Local Fee</td>
+                <td class="px-4 py-3 text-md font-medium">1st Semester</td>
+                <td class="px-4 py-3 text-md font-medium">150</td>
             </tr>
     
         </tbody>
@@ -154,7 +154,7 @@
     <div class="flex justify-end mt-4 mr-4">
     <a href="{{ route('officer.payments') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
 
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
+    <button class="text-white bg-primary-700 hover:bg-primary-800 font-bold py-2 px-4 rounded ml-2"
             onclick="window.location='{{ route('officer.paymentReceipt') }}'">
         Pay Now
     </button>

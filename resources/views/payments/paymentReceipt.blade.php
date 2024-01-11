@@ -2,9 +2,12 @@
 
     @include('layouts.sidebar')
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
     <!--Main-->
-    <main class="p-7 sm:ml-64 pt-20 sm:pt-4 h-auto">
-    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-6">
+    <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
+    <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-1">
 
     <div class="mx-5 px-3 ">
         <!-- Start coding here -->
@@ -74,50 +77,49 @@
     </div>
 </div>
 <div class="overflow-x-auto">
-    <table class="border-collapse table-auto w-full text-sm mt-9 whitespace-pre">
+    <table class="border-collapse table-auto w-full text-md font-medium  mt-9 whitespace-pre">
         <thead>
             <tr class="bg-gray-100">
-                <th class="p-4  text-lg font-medium text-start">Payment Name</th>
-                <th class="p-4  text-lg font-medium text-start">Payment Type</th>
-                <th class="p-4 text-lg font-medium text-start">Date</th>
-                <th class="p-4  pe-7 text-lg font-medium text-center">Time</th>
-                <th class="p-4  text-lg font-medium text-end">Academic Year</th>
-                <th class="p-4 ext-lg font-medium text-end">Semester</th>
-                <th class="p-4 text-lg font-medium text-end">Price</th>
-                <th class="p-4 text-lg font-medium text-end">Status</th>
+                <th class="p-4  text-md font-medium text-start">Payment Name</th>
+                <th class="p-4   text-md font-medium text-start">Payment Type</th>
+                <th class="p-4  text-md font-medium text-start">Date</th>
+                <th class="p-4  pe-7  text-md font-medium text-center">Time</th>
+                <th class="p-4   text-md font-medium text-end">Academic Year</th>
+                <th class="p-4  text-md font-medium text-end">Semester</th>
+                <th class="p-4  text-md font-medium text-end">Price</th>
+                <th class="p-4  text-md font-medium text-end">Status</th>
             </tr>
         </thead>
         <tbody class="bg-white">
             <tr>
-                <td class="p-4  text-base font-normal">CCS Fee</td>
-                <td class="p-4  text-base font-normal">Local Fee</td>
-                <td class="p-4  text-base font-normal">1/10/24</td>
-                <td class="p-4  text-base font-normal text-center">4:30 PM</td>
-                <td class="p-4  text-base font-normal text-end">2023-2024</td>
-                <td class="p-4  text-base font-normal text-end">2nd Semester</td>
-                <td class="p-4  text-base font-normal text-end">250</td>
-                <td class="p-4  text-base font-normal text-end">Paid</td>
+                <td class="p-4  text-base font-medium ">CCS Fee</td>
+                <td class="p-4  text-base font-medium ">Local Fee</td>
+                <td class="p-4  text-base font-medium ">1/10/24</td>
+                <td class="p-4  text-base font-medium  text-center">4:30 PM</td>
+                <td class="p-4  text-base font-medium  text-end">2023-2024</td>
+                <td class="p-4  text-base font-medium  text-end">2nd Semester</td>
+                <td class="p-4  text-base font-medium  text-end">250</td>
+                <td class="p-4  text-base font-medium text-end">Paid</td>
             </tr>
             <tr>
-                <td class="p-4  text-base font-normal">CSB Fee</td>
-                <td class="p-4  text-base font-normal">University Fee</td>
-                <td class="p-4 text-base font-normal">2/10/24</td>
-                <td class="p-4  text-base font-normal text-center">8:30 PM</td>
-                <td class="p-4  text-base font-normal text-end">2023-2024</td>
-                <td class="p-4  text-base font-normal text-end">1st Semester</td>
-                <td class="p-4  text-base font-normal text-end">150</td>
-                <td class="p-4  text-base font-normal text-end">Paid</td>
+                <td class="p-4  text-base font-medium ">CSB Fee</td>
+                <td class="p-4  text-base font-medium ">University Fee</td>
+                <td class="p-4 text-base font-medium ">2/10/24</td>
+                <td class="p-4  text-base font-medium  text-center">8:30 PM</td>
+                <td class="p-4  text-base font-medium  text-end">2023-2024</td>
+                <td class="p-4  text-base font-medium  text-end">1st Semester</td>
+                <td class="p-4  text-base font-medium  text-end">150</td>
+                <td class="p-4  text-base font-medium  text-end">Paid</td>
             </tr>
 
             <tr>
-                <td colspan="10" class="p-4 text-base font-normal border text-end"><span class="pe-2 font-bold">Total Amount:</span>$1020</td>
+                <td colspan="10" class="p-4 text-base font-medium border text-end"><span class="pe-2 font-bold">Total Amount:400</span></td>
             </tr>
 
         </tbody>
     </table>
     <div class="flex items-center justify-end gap-4 mt-4">
         <a href="{{ route('officer.paymentNext') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800  font-bold py-2 px-4 rounded">Back</a>
-
         <a href="{{ route('officer.payments') }}" class="text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded">New Payment</a>
     </div>
 </div>
