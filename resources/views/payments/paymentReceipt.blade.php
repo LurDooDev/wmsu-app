@@ -77,7 +77,7 @@
     </div>
 </div>
 <div class="overflow-x-auto">
-    <table class="border-collapse table-auto w-full text-md font-medium  mt-9 whitespace-pre">
+    <table class="border-collapse table-auto w-full text-md  mt-9 whitespace-pre">
         <thead>
             <tr class="bg-gray-100">
                 <th class="p-4  text-md font-medium text-start">Payment Name</th>
@@ -113,7 +113,7 @@
             </tr>
 
             <tr>
-                <td colspan="10" class="p-4 text-base font-medium border text-end"><span class="pe-2 font-bold">Total Amount:400</span></td>
+                <td colspan="10" class="p-4 text-base font-medium border text-end"><span class="pe-2 font-bold">Total Amount:</span>$1020</td>
             </tr>
 
         </tbody>
