@@ -3,7 +3,7 @@
     @include('layouts.sidebar')
 
     <!--Main-->
-    <main class="p-7 sm:ml-64 pt-20 sm:pt-4 h-auto">
+    <main class="p-9 sm:ml-64 pt-20 sm:pt-4 h-auto">
     <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-1">
 
     <div class="mx-5 px-3 ">
