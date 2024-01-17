@@ -69,16 +69,16 @@
                     </thead>
                     <tbody>
                     <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 text-md font-medium">2023</th>
+                            <th scope="row" class="px-4 py-3 text-md font-medium">2023-2024</th>
                             <td class="px-4 py-3 text-md font-medium">1st Semester</td>
                             <td class="px-4 py-3 text-md font-medium">CSB Fee</td>
                             <td class="px-4 py-3 text-md font-medium">University Fee</td>
-                            <td class="px-4 py-3 text-md font-medium">500</td>
+                            <td class="px-4 py-3 text-md font-medium">250</td>
                             <td class="px-4 py-3 text-md font-medium">Paid</td>
                         
             </tr>
             <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 text-md font-medium">2023</th>
+                            <th scope="row" class="px-4 py-3 text-md font-medium">2023-2024</th>
                             <td class="px-4 py-3 text-md font-medium">2nd Semester</td>
                             <td class="px-4 py-3 text-md font-medium">CCS Fee</td>
                             <td class="px-4 py-3 text-md font-medium">Local Fee</td>
@@ -97,6 +97,7 @@
                 <th scope="col" class="px-4 py-3 text-md font-medium">Select</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Id</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Payment Name</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Academic Year</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Semester</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Amount</th>
             </tr>
@@ -106,6 +107,7 @@
                 <td class="px-4 py-3 text-md font-medium" ><input type="checkbox"></td>
                 <td class="px-4 py-3 text-md font-medium">1</td>
                 <td class="px-4 py-3 text-md font-medium">University Fee</td>
+                <td class="px-4 py-3 text-md font-medium">2023-2024</td>
                 <td class="px-4 py-3 text-md font-medium">1st Semester</td>
                 <td class="px-4 py-3 text-md font-medium">350</td>
             </tr>
@@ -113,8 +115,9 @@
                 <td class="px-4 py-3 text-md font-medium"><input type="checkbox"></td>
                 <td class="px-4 py-3 text-md font-medium">2</td>
                 <td class="px-4 py-3 text-md font-medium">University Fee</td>
+                <td class="px-4 py-3 text-md font-medium">2023-2024</td>
                 <td class="px-4 py-3 text-md font-medium">1st Semester</td>
-                <td class="px-4 py-3 text-md font-medium">150</td>
+                <td class="px-4 py-3 text-md font-medium">250</td>
             </tr>
 
         </tbody>
@@ -129,6 +132,7 @@
                 <th scope="col" class="px-4 py-3 text-md font-medium">Select</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Id</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Payment Name</th>
+                <th scope="col" class="px-4 py-3 text-md font-medium">Academic Year</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium ">Semester</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Amount</th>
             </tr>
@@ -138,6 +142,7 @@
                 <td class="px-4 py-3"><input type="checkbox"></td>
                 <td class="px-4 py-3 text-md font-medium">1</td>
                 <td class="px-4 py-3 text-md font-medium">Local Fee</td>
+                <td class="px-4 py-3 text-md font-medium">2023-2024</td>
                 <td class="px-4 py-3 text-md font-medium">1st Semester</td>
                 <td class="px-4 py-3 text-md font-medium">350</td>
             </tr>
@@ -145,6 +150,7 @@
                 <td class="px-4 py-3"><input type="checkbox"></td>
                 <td class="px-4 py-3 text-md font-medium">2</td>
                 <td class="px-4 py-3 text-md font-medium">Local Fee</td>
+                <td class="px-4 py-3 text-md font-medium">2023-2024</td>
                 <td class="px-4 py-3 text-md font-medium">1st Semester</td>
                 <td class="px-4 py-3 text-md font-medium">150</td>
             </tr>
