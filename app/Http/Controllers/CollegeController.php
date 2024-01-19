@@ -15,6 +15,10 @@ class CollegeController extends Controller
         return view('colleges.index');
     }
 
+    public function collegeCS()
+    {
+        return view('colleges.collegeCS');
+    }
     /**
      * Show the form for creating a new resource.
      */
