@@ -1,7 +1,8 @@
 @include('layouts.header')
 @include('layouts.sidebar')
 
-<main class="p-4 sm:ml-64 pt-20 sm:pt-4 h-auto">
+<main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
+
     <div class="p-4">
       <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
 
