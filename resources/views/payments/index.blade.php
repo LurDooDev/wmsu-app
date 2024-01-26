@@ -47,8 +47,8 @@
         </form>
     </div>
 </div>
+</div>
 <!--End Table Header -->
-
             <!--Table-->
             <div class="overflow-x-auto">
                 <table class="w-full text-md font-medium text-left ">
@@ -82,6 +82,7 @@
                  </td>
             </tr>
         </table>
+</div>
             </div>
             <!--End Table-->
             <!--Table Pagination-->
