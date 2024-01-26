@@ -91,6 +91,8 @@ Route::middleware(['auth', 'user-access:collector'])->group(function () {
     
     // Payments Routes
     Route::get('/collector/payments', [HomeController::class, 'collectorHome'])->name('collector.home');
+    Route::get('/collector/paymentNext', [PaymentController::class, 'paymentNext'])->name('collector.paymentNext');
+    Route::get('/collector/paymentReceipt', [PaymentController::class, 'paymentReceipt'])->name('collector.paymentReceipt');
 
     // Payment Records Routes
     Route::get('/collector/payment/records', [PaymentController::class, 'indexRecords'])->name('collector.payment.records');
@@ -110,6 +112,8 @@ All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
+
+    
   
     // Admin Dashboard Routes
     Route::get('/admin', [HomeController::class, 'adminHome'])->name('admin.home');
@@ -124,6 +128,8 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     // Payments Routes
     Route::get('/admin/payments', [PaymentController::class, 'index'])->name('admin.payments');
+    Route::get('/admin/paymentNext', [PaymentController::class, 'paymentNext'])->name('admin.paymentNext');
+    Route::get('/admin/paymentReceipt', [PaymentController::class, 'paymentReceipt'])->name('admin.paymentReceipt');
 
     // Payment Records Routes
     Route::get('/admin/payment/records', [PaymentController::class, 'indexRecords'])->name('admin.payment.records');
