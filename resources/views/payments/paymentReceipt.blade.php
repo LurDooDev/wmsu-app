@@ -141,7 +141,16 @@
                 Print
             </a>
             <a href="{{ route('admin.payments') }}" class="text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded">New Payment</a>               
-        
+    @elseif (Auth::user()->type == 'collector')
+    <a href="{{ route('collector.paymentNext') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800  font-bold py-2 px-4 rounded">Back</a>
+            <a href="#" id="printButton" class="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:scale-[1.02] transition-transform sm:w-auto">
+                <svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path>
+                </svg>
+                Print
+            </a>
+            <a href="{{ route('collector.home') }}" class="text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded">New Payment</a>               
+         
     @endif
     </div>
 </div>
