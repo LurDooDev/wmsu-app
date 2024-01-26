@@ -268,15 +268,13 @@
 
                       
                 </div>
-                <div class="absolute bottom-4 right-4 flex ">
-                <a href="" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-3 rounded">
-        Back
-    </a>
-
-    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded py-2 px-3 focus:outline-none ml-2">
-        Save User
-    </button>
-
+                <div class="mt-auto flex items-center justify-end border-t rounded-t dark:border-gray-600 p-2">
+  <a href="" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-3 rounded">
+    Back
+  </a>
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded py-2 px-3 focus:outline-none ml-2">
+    Save User
+  </button>
 </div>
 
 </div>
