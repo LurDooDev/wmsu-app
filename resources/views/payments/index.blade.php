@@ -47,7 +47,7 @@
         </form>
     </div>
 </div>
-</div>
+
 <!--End Table Header -->
             <!--Table-->
             <div class="overflow-x-auto">
@@ -83,7 +83,6 @@
             </tr>
         </table>
 </div>
-            </div>
             <!--End Table-->
             <!--Table Pagination-->
             <nav class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
