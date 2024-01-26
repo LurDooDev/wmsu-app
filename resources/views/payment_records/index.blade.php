@@ -192,6 +192,7 @@
             </nav>
             <!--End Table Pagination-->
         </div>
+</div>
     </div>
     </section>
     </main>

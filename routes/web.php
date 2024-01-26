@@ -149,3 +149,9 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/users', [UserController::class, 'index'])->name('admin.users');
 
 });
+
+// Delete Confirmation Page
+Route::get('students/{student}/delete', [StudentController::class, 'deleteConfirmation'])->name('students.deleteConfirmation');
+
+// Students Routes
+Route::resource('students', StudentController::class);
