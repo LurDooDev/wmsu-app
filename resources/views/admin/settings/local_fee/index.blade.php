@@ -180,7 +180,7 @@
 
 <!-- Main modal -->
 <div id="localfee-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-full">
-    <div class="relative p-8 w-full max-w-3xl max-h-screen flex flex-col">
+<div class="relative w-8/12 max-w-6xl p-8 max-h-screen flex flex-col">
         <!-- Modal content -->
         <div class="relative p-8 bg-white rounded-lg shadow dark:bg-gray-800 flex-1">
             <!-- Close Button - Upper Right Corner -->
@@ -189,55 +189,66 @@
                 <span class="sr-only">Close modal</span>
             </button>
             <!-- Left Section - Fee Details -->
-            <div class="mt-8">
-                <h3 class="text-2xl font-semibold mb-4">Fee Details</h3>
-                <form action="#" class="grid gap-6">
-                    <div class="mb-4">
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-                        <input type="text" name="name" id="name" class="input-field-lg w-full" placeholder="Ex. CCS fee&ldquo;">
-                    </div>
-                    <div class="mb-4">
-                        <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount</label>
-                        <input type="number"  name="amount" id="amount" class="input-field-lg w-full" placeholder="P300">
-                    </div>
-                </form>
-            </div>
-            <!-- Right Section - Fee Scheduling -->
-            <div class="mt-8">
-                <h3 class="text-2xl font-semibold mb-4">Fee Scheduling</h3>
-                <form action="#" class="grid gap-6">
-                    <div class="mb-4">
-                        <label for="academic-year" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Academic Year</label>
-                        <select id="academic-year" class="select-field-lg w-full">
-                            <option selected="">Select Academic Year</option>
-                            <option value="">2022-2023</option>
-                            <option value="">2023-2024</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <label for="semester" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Semester</label>
-                        <select id="semester" class="select-field-lg w-full">
-                            <option selected="">Select Semester</option>
-                            <option value="">First Semester</option>
-                            <option value="">Second Semester</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <label for="start-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Start Date</label>
-                        <input type="date" name="start-date" id="start-date" class="input-field-lg w-full" placeholder="Select start date">
-                    </div>
-                    <div class="mb-4">
-                        <label for="end-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">End Date</label>
-                        <input type="date" name="end-date" id="end-date" class="input-field-lg w-full" placeholder="Select end date">
-                    </div>
-                </form>
-            </div>
+          <div class="flex flex-row justify-between">
+
+  <!-- Left Section - Fee Details -->
+  <div class="mt-8 basis-1/2 pr-4">
+    
+    <h3 class="text-2xl font-semibold mb-4">Fee Details</h3>
+    <form action="#" class="grid gap-6">
+      <div class="mb-4">
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+        <input type="text" name="name" id="name" class="input-field-lg w-full" placeholder="Ex. CCS fee&ldquo;">  
+      </div>
+      <div class="mb-4">
+        <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount</label>
+        <input type="number" name="amount" id="amount" class="input-field-lg w-full" placeholder="P300">
+      </div>
+    </form>
+  </div>
+
+  <!-- Right Section - Fee Scheduling -->
+  <div class="mt-8 basis-1/2 pl-4">
+    <h3 class="text-2xl font-semibold mb-4">Fee Scheduling</h3>
+    <form action="#" class="grid gap-6">
+      <div class="mb-4">
+        <label for="academic-year" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Academic Year</label>
+        <select id="academic-year" class="select-field-lg w-full">
+          <option selected="">Select Academic Year</option>
+          <option value="">2022-2023</option>
+          <option value="">2023-2024</option>
+        </select>
+      </div>
+      <div class="mb-4">  
+        <label for="semester" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Semester</label>
+        <select id="semester" class="select-field-lg w-full">
+          <option selected="">Select Semester</option>
+          <option value="">First Semester</option>
+          <option value="">Second Semester</option>  
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="start-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Start Date</label>
+        <input type="date" name="start-date" id="start-date" class="input-field-lg w-full" placeholder="Select start date">
+      </div>
+      <div class="mb-4">
+        <label for="end-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">End Date</label> 
+        <input type="date" name="end-date" id="end-date" class="input-field-lg w-full" placeholder="Select end date">
+      </div>
+    </form>
+  </div>
+
+</div>
             <!-- Save Fees Button - Bottom Section -->
             <div class="mt-auto flex items-center justify-end">
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                    Save Fees
-                </button>
-        </div>
+            <a href="" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-3 rounded">
+        Back
+    </a>
+
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded py-2 px-3 focus:outline-none ml-2">
+        Save Fees
+    </button>
+</div>
     </div>
 </div>
 </main>
