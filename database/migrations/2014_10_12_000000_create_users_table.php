@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('password');
             $table->tinyInteger('type')->default(0);
             /* Users: 0=>Officer, 1=>Admin, 2=>Collector */
+            $table->foreignId('college_id')->nullable()->constrained('colleges')->onDelete('restrict'); // (Temporary Nullable) FK relate to college
+            $table->foreignId('position_id')->nullable()->constrained('positions')->onDelete('restrict'); // (Temporary Nullable) FK relate to position
             $table->rememberToken();
             $table->timestamps();
         });

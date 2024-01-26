@@ -122,39 +122,41 @@
         </tbody>
     </table>
 </div>
-    <div class="flex items-center justify-end gap-4 mt-4">
-        <a href="{{ route('officer.paymentNext') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800  font-bold py-2 px-4 rounded">Back</a>
-        <a href="#" id="printButton" class="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:scale-[1.02] transition-transform sm:w-auto">
-            <svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path>
-            </svg>
-            Print
-        </a>
-        
-        <a href="{{ route('officer.payments') }}" class="text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded">New Payment</a>
-        
-        <script>
-            document.getElementById('printButton').addEventListener('click', function (event) {
-                event.preventDefault();
-        
-                Swal.fire({
-                    title: 'Print Confirmation',
-                    text: 'Are you sure you want to print?',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        // Implement the print functionality here
-                        // For demonstration purposes, you can call the browser's print function
-                        window.print();
-                    }
+    @if (Auth::user()->type == 'officer')
+        <div class="flex items-center justify-end gap-4 mt-4">
+            <a href="{{ route('officer.paymentNext') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800  font-bold py-2 px-4 rounded">Back</a>
+            <a href="#" id="printButton" class="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:scale-[1.02] transition-transform sm:w-auto">
+                <svg class="mr-2 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"></path>
+                </svg>
+                Print
+            </a>
+            
+            <a href="{{ route('officer.payments') }}" class="text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded">New Payment</a>
+            
+            <script>
+                document.getElementById('printButton').addEventListener('click', function (event) {
+                    event.preventDefault();
+            
+                    Swal.fire({
+                        title: 'Print Confirmation',
+                        text: 'Are you sure you want to print?',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Implement the print functionality here
+                            // For demonstration purposes, you can call the browser's print function
+                            window.print();
+                        }
+                    });
                 });
-            });
-        </script>
-    </div>
+            </script>
+        </div>
+    @endif
 </div>
 
     <div>

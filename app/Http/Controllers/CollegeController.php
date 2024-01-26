@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\College;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class CollegeController extends Controller
 {
@@ -12,58 +13,43 @@ class CollegeController extends Controller
      */
     public function index()
     {
-        return view('colleges.index');
+        $colleges = College::all();
+        
+        return view('colleges.index', compact('colleges'));
     }
 
     public function collegeCS()
     {
         return view('colleges.collegeCS');
     }
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
-     * Store a newly created resource in storage.
+     * Create College.
      */
-    public function store(Request $request)
+    public function createCollege(Request $request)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(College $college)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(College $college)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, College $college)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(College $college)
-    {
-        //
+        try {
+            // Validate the incoming request data
+            $request->validate([
+                'name' => 'required|string|max:255|unique:colleges,name',
+                'college_code' => 'required|string|max:10|unique:colleges,code',
+            ]);
+        
+            // Create a new College record
+            $college = new College();
+            $college->name = $request->name;
+            $college->code = $request->college_code;
+        
+            // Save the college to the database
+            $college->save();
+        
+            return redirect()->back()->with('success', 'College added successfully.');
+        } catch (ValidationException $e) {
+            // Redirect back with validation error messages
+            return redirect()->back()->withErrors($e->validator->errors())->withInput()->with('error', 'There was an error.');
+        } catch (\Exception $e) {
+            // Redirect back with a generic error message
+            return redirect()->back()->with('error', 'There was an error.');
+        }
     }
 }

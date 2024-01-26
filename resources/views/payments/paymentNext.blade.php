@@ -158,14 +158,16 @@
     
         </tbody>
     </table>
-    <div class="flex justify-end mt-4 mr-4">
-    <a href="{{ route('officer.payments') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
+    @if (Auth::user()->type == 'officer')
+        <div class="flex justify-end mt-4 mr-4">
+            <a href="{{ route('officer.payments') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
 
-    <button class="text-white bg-primary-700 hover:bg-primary-800 font-bold py-2 px-4 rounded ml-2"
-            onclick="window.location='{{ route('officer.paymentReceipt') }}'">
-        Pay Now
-    </button>
-</div>
+            <button class="text-white bg-primary-700 hover:bg-primary-800 font-bold py-2 px-4 rounded ml-2"
+                    onclick="window.location='{{ route('officer.paymentReceipt') }}'">
+                Pay Now
+            </button>
+        </div>
+    @endif
 </div>
 
             <!--End Table-->

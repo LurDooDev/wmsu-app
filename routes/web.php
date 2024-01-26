@@ -61,8 +61,9 @@ Route::middleware(['auth', 'user-access:officer'])->group(function () {
     Route::get('/officer', [HomeController::class, 'officerHome'])->name('officer.home');
 
     // Payment Routes
- 
-    
+    Route::get('/officer/payments', [PaymentController::class, 'index'])->name('officer.payments');
+    Route::get('/officer/paymentNext', [PaymentController::class, 'paymentNext'])->name('officer.paymentNext');
+    Route::get('/officer/paymentReceipt', [PaymentController::class, 'paymentReceipt'])->name('officer.paymentReceipt');
 
     // Payment Records Routes
     Route::get('/officer/payment/records', [PaymentController::class, 'indexRecords'])->name('officer.payment.records');
@@ -113,13 +114,11 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     // Admin Dashboard Routes
     Route::get('/admin', [HomeController::class, 'adminHome'])->name('admin.home');
 
-    
- // Payment Routes
- 
-
-
     // Colleges Routes
     Route::get('/admin/colleges', [CollegeController::class, 'index'])->name('admin.colleges');
+    // College CRUD
+    // Create
+    Route::post('/admin/colleges/create', [CollegeController::class, 'createCollege'])->name('admin.colleges.create');
 
     Route::get('/admin/collegeCS', [CollegeController::class, 'collegeCS'])->name('admin.collegeCS');
 
@@ -157,13 +156,3 @@ Route::get('students/{student}/delete', [StudentController::class, 'deleteConfir
 
 // Students Routes
 Route::resource('students', StudentController::class);
-
-
-Route::middleware(['auth', 'user-access:officer,admin'])->group(function () {
-    // ... officer and admin routes
-
-    // Include payment routes for both admin and officer
-    Route::get('/officer/payments', [PaymentController::class, 'index'])->name('officer.payments');
-    Route::get('/officer/paymentNext', [PaymentController::class, 'paymentNext'])->name('officer.paymentNext');
-    Route::get('/officer/paymentReceipt', [PaymentController::class, 'paymentReceipt'])->name('officer.paymentReceipt');
-});
