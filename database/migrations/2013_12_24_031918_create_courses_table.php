@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('degree');
             $table->foreignId('college_id')->constrained('colleges')->onDelete('restrict'); // FK relate to colleges
             $table->timestamps();
         });

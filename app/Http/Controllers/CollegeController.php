@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\College;
+use App\Models\Course;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
@@ -20,7 +21,7 @@ class CollegeController extends Controller
 
     public function collegeCS()
     {
-        return view('colleges.collegeCS');
+        return view('colleges.course');
     }
 
     /**
@@ -33,17 +34,31 @@ class CollegeController extends Controller
             $request->validate([
                 'name' => 'required|string|max:255|unique:colleges,name',
                 'college_code' => 'required|string|max:10|unique:colleges,code',
+                'courses.*.name' => 'required|string|max:255',
             ]);
-        
+
             // Create a new College record
             $college = new College();
             $college->name = $request->name;
             $college->code = $request->college_code;
-        
+
             // Save the college to the database
             $college->save();
-        
-            return redirect()->back()->with('success', 'College added successfully.');
+
+            // Get the newly created college's ID
+            $collegeId = $college->id;
+
+            // Handle courses
+            foreach ($request->courses as $courseData) {
+                $course = new Course();
+                $course->name = $courseData['name'];
+                $course->college_id = $collegeId;
+
+                // Save the course to the database
+                $course->save();
+            }
+
+            return redirect()->back()->with('success', 'College and courses added successfully.');
         } catch (ValidationException $e) {
             // Redirect back with validation error messages
             return redirect()->back()->withErrors($e->validator->errors())->withInput()->with('error', 'There was an error.');
