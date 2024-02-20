@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuditController;
 use App\Http\Controllers\CollegeController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocalFeeController;
 use App\Http\Controllers\PaymentController;
@@ -122,7 +123,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/colleges', [CollegeController::class, 'index'])->name('admin.colleges');
     // College CRUD
     // Create
-    Route::post('/admin/colleges/create', [CollegeController::class, 'createCollege'])->name('admin.colleges.create');
+    Route::post('/admin/colleges/store', [CollegeController::class, 'createCollege'])->name('admin.colleges.create');
 
     Route::get('/admin/collegeCS', [CollegeController::class, 'collegeCS'])->name('admin.collegeCS');
 
@@ -139,6 +140,9 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     // Student Routes
     Route::get('/admin/students', [StudentController::class, 'index'])->name('admin.students');
+    // Student CRUD
+    // Store
+    Route::post('/admin/students/store', [StudentController::class, 'store'])->name('admin.students.store');
 
     // Audit Routes
     Route::get('/admin/audit-log', [AuditController::class, 'index'])->name('admin.audit');
@@ -157,8 +161,5 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
 });
 
-// Delete Confirmation Page
-Route::get('students/{student}/delete', [StudentController::class, 'deleteConfirmation'])->name('students.deleteConfirmation');
-
-// Students Routes
-Route::resource('students', StudentController::class);
+// AJAX
+Route::get('/fetch-courses/{collegeId}', [CourseController::class, 'fetchCourses']);

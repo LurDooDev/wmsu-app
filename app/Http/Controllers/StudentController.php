@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\College;
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class StudentController extends Controller
 {
@@ -12,15 +14,11 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('students.index');
-    }
+        $colleges = College::all();
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('students.create');
+        $students = Student::all();
+
+        return view('students.index', compact('colleges', 'students'));
     }
 
     /**
@@ -28,17 +26,41 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        // Validate the request
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            // Add more validation rules as needed
-        ]);
+        try {
+            // Validate the incoming request data
+            $request->validate([
+                'snumber' => 'required|string|max:255|unique:students,student_id',
+                'fname' => 'required|string|max:255',
+                'mname' => 'required|string|max:255',
+                'lname' => 'required|string|max:255',
+                'email' => 'required|string|email|max:255|unique:students,email|regex:/@wmsu\.edu\.ph$/i',
+                'college' => 'required|exists:colleges,id',
+                'course' => 'required|exists:courses,id',
+                'year_level' => 'required|string|max:255',
+            ]);
 
-        // Create a new student
-        Student::create($request->all());
+            // Create a new Student record
+            $student = new Student();
+            $student->student_id = $request->snumber;
+            $student->firstname = $request->fname;
+            $student->middlename = $request->mname;
+            $student->lastname = $request->lname;
+            $student->college_id = $request->college;
+            $student->course_id = $request->course;
+            $student->email = $request->email;
+            $student->year_level = $request->year_level;
 
-        return redirect()->route('students.index')->with('success', 'Student created successfully!');
+            // Save the college to the database
+            $student->save();
+
+            return redirect()->back()->with('success', 'Student added successfully.');
+        } catch (ValidationException $e) {
+            // Redirect back with validation error messages
+            return redirect()->back()->withErrors($e->validator->errors())->withInput()->with('error', 'There was a validation error.');
+        } catch (\Exception $e) {
+            // Redirect back with a generic error message
+            return redirect()->back()->with('error', 'There was an error.');
+        }
     }
 
     /**
