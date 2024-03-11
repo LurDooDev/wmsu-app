@@ -12,15 +12,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        DB::statement('CREATE TABLE colleges(
+        DB::statement('CREATE TABLE departments(
             id INT PRIMARY KEY AUTO_INCREMENT,
+            college_id INT,
             code VARCHAR(100) UNIQUE,
             name VARCHAR(255) NOT NULL,
             date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
             date_updated DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
         );');
-
-        DB::statement('CREATE INDEX idx_college_code ON colleges(code(10));');
+        DB::statement('CREATE INDEX idx_college_id ON departments(college_id);');
+        DB::statement('CREATE INDEX idx_department_code ON departments(code(10));');
     }
 
     /**
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('colleges');
+        Schema::dropIfExists('departments');
     }
 };

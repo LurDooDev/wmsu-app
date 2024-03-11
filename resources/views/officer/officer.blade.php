@@ -1,5 +1,5 @@
 @include('layouts.header')
-@include('layouts.sidebar')
+@include('layouts.sidebar',['user_details'=>$user_details])
 
 <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
 

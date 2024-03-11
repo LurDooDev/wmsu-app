@@ -45,7 +45,7 @@
       <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
       <ul class="space-y-4 font-medium">
          <!--Admin Sidebar -->
-         @if (Auth::user()->type == 'admin')
+         @if ($user_details->role_name == 'admin')
             <!--Admin Home (Dashboard) -->
             <li>
                <a href="{{route('admin.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
@@ -120,7 +120,7 @@
                </a>
             </li>
          <!--Officer Sidebar -->
-         @elseif (Auth::user()->type == 'officer')
+         @elseif ($user_details->role_name == 'officer')
             <!--Officer Home (Dashboard) -->
             <li>
                <a href="{{route('officer.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
@@ -165,7 +165,7 @@
                </a>
             </li>
          <!--Collector Sidebar -->
-         @elseif (Auth::user()->type == 'collector')
+         @elseif ($user_details->role_name == 'collector')
             <!--Collector Home (Payments) -->
             <li>
                <a href="{{route('collector.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
@@ -211,7 +211,7 @@
               </button>
               <ul id="admin-settings-dropdown" class="py-2 space-y-2">
                   <!-- Admin Settings -->
-                  @if (Auth::user()->type == 'admin')
+                  @if ($user_details->role_name == 'admin')
                      <li>
                         <a href="{{route('admin.overview')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
                            {{ Route::is('admin.overview') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
@@ -237,7 +237,7 @@
                         </a>
                      </li>
                   <!-- Officer Settings -->
-                  @elseif (Auth::user()->type == 'officer')
+                  @elseif ($user_details->role_name == 'officer')
                      <li>
                         <a href="{{route('officer.local.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
                         {{ Route::is('officer.local.fees') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
@@ -251,7 +251,7 @@
                         </a>
                      </li>
                   <!-- Collector Settings -->
-                  @elseif (Auth::user()->type == 'collector')
+                  @elseif ($user_details->role_name == 'collector')
                      <li>
                         <a href="{{route('collector.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
                         {{ Route::is('collector.users') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">

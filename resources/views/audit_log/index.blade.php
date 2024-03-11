@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-@include('layouts.sidebar')
+@include('layouts.sidebar',['user_details'=>$user_details])
 
 <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
     <div class="px-6 py-8 bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
