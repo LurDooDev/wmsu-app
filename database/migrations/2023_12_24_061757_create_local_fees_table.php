@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('local_fees', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            fee_type_id
+            $table->integer('fee_type_id');
         });
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations.php
      */
     public function down(): void
     {
