@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-    @include('layouts.sidebar')
+@include('layouts.sidebar',['user_details'=>$user_details])
 
     <!--Main-->
     <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
@@ -159,21 +159,21 @@
         </tbody>
     </table>
     <div class="flex justify-end mt-4 mr-4">
-    @if (Auth::user()->type == 'officer')
+    @if ($user_details->role_name == 'officer')
             <a href="{{ route('officer.payments') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
 
             <button class="text-white bg-primary-700 hover:bg-primary-800 font-bold py-2 px-4 rounded ml-2"
                     onclick="window.location='{{ route('officer.paymentReceipt') }}'">
                 Pay Now
             </button>
-    @elseif (Auth::user()->type == 'admin')
+    @elseif ($user_details->role_name == 'admin')
     <a href="{{ route('admin.payments') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
 
             <button class="text-white bg-primary-700 hover:bg-primary-800 font-bold py-2 px-4 rounded ml-2"
                     onclick="window.location='{{ route('admin.paymentReceipt') }}'">
                 Pay Now
             </button>
-    @elseif (Auth::user()->type == 'collector')      
+    @elseif ($user_details->role_name == 'collector')      
     <a href="{{ route('collector.home') }}" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 font-bold py-2 px-4 rounded">Back</a>
 
             <button class="text-white bg-primary-700 hover:bg-primary-800 font-bold py-2 px-4 rounded ml-2"

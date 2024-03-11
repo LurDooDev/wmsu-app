@@ -14,6 +14,12 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+// middleware
+use App\Http\Middleware\CheckRoles;
+use App\Http\Middleware\isAdmin;
+use App\Http\Middleware\isOfficer;
+use App\Http\Middleware\isCollector;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,28 +32,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+   
+    // if(Auth::check()) {
 
-    if(Auth::check()) {
+    //     if(Auth::user()->type == 'officer'){
 
-        if(Auth::user()->type == 'officer'){
+    //         return redirect()->route('officer.home');
 
-            return redirect()->route('officer.home');
+    //     } else if(Auth::user()->type == 'admin'){
 
-        } else if(Auth::user()->type == 'admin'){
+    //         return redirect()->route('admin.home');
 
-            return redirect()->route('admin.home');
+    //     } else if(Auth::user()->type == 'collector'){
 
-        } else if(Auth::user()->type == 'collector'){
+    //         return redirect()->route('collector.home');
 
-            return redirect()->route('collector.home');
+    //     }
 
-        }
+    // }
 
-    }
+    // return view('auth.login');
 
-    return view('auth.login');
-
-});
+})->middleware(CheckRoles::class);
 
 Auth::routes();
 
@@ -56,7 +62,7 @@ Auth::routes();
 All Officer Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:officer'])->group(function () {
+Route::middleware(isOfficer::class)->group(function () {
   
     // Dashboard Officer Route
     Route::get('/officer', [HomeController::class, 'officerHome'])->name('officer.home');
@@ -88,7 +94,7 @@ Route::middleware(['auth', 'user-access:officer'])->group(function () {
 All Collector Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:collector'])->group(function () {
+Route::middleware(isAdmin::class)->group(function () {
     
     // Payments Routes
     Route::get('/collector/payments', [HomeController::class, 'collectorHome'])->name('collector.home');
@@ -112,7 +118,7 @@ Route::middleware(['auth', 'user-access:collector'])->group(function () {
 All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:admin'])->group(function () {
+Route::middleware(isCollector::class)->group(function () {
 
     
   

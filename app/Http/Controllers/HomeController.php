@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -31,9 +32,24 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function adminHome()
+    public function adminHome(Request $request )
     {
-        return view('admin.admin');
+        $session = $request->session()->all();
+        
+        if(isset($session['id']) && $user_details = DB::table('users as u')
+            ->select(
+                'u.id',
+                'r.name as role_name'
+              )
+            ->where('u.id','=',$session['id'])
+            ->join('roles as r','r.id','u.role_id')
+            ->get()
+            ->first()){
+            return view('admin.admin',['user_details'=>$user_details]);
+        }else{
+            return redirect('/login');
+        }
+       
     }
   
     /**

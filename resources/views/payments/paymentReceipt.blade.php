@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-    @include('layouts.sidebar')
+@include('layouts.sidebar',['user_details'=>$user_details])
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 

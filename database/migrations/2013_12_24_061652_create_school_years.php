@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -12,15 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        DB::statement('CREATE TABLE colleges(
+        DB::statement('CREATE TABLE school_years(
             id INT PRIMARY KEY AUTO_INCREMENT,
-            code VARCHAR(100) UNIQUE,
-            name VARCHAR(255) NOT NULL,
+            school_year VARCHAR(100) UNIQUE,
             date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
             date_updated DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
         );');
-
-        DB::statement('CREATE INDEX idx_college_code ON colleges(code(10));');
+        DB::statement('CREATE INDEX idx_school_years_school_year ON school_years(school_year(10));');
     }
 
     /**
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('colleges');
+        Schema::dropIfExists('school_years');
     }
 };

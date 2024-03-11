@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('courses', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->foreignId('college_id')->constrained('colleges')->onDelete('restrict'); // FK relate to colleges
-            $table->timestamps();
-        });
+        DB::statement('CREATE TABLE enrolled_students(
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            student_id INT,
+            date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
+            date_updated DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        );');
     }
 
     /**
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('enrolled_students');
     }
 };

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('local_fees', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            fee_type_id
         });
     }
 
