@@ -6,6 +6,7 @@
     <main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
     <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-1">
 
+
     <div class="mx-5 px-3 ">
         <!-- Start coding here -->
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
@@ -42,29 +43,18 @@
   <!-- Left Content -->
   <div class="w-1/2 border-b-2 border-gray-300 pb-4 mb-6 ml-5">
     <h2 class="text-2xl font-bold mb-4 mt-3">Bryan The Dunker</h2>
-      <div class="text-xl">College of Computing Studies</div>
-      <div class="text-xl">Enrolled in 2024-2025</div>
+    <div class=" text-2xl mb-2 mt-3">Western Mindanao State University</div>
   </div>
 
   <!-- Right Content -->
   <div class="w-1/2 border-b-2 border-gray-300 pb-4 mb-6 ml-auto mr-6">
     <div class=" flex-shrink-0 text-right ">
-        <div class="font-bold text-xl mb-2 mt-3">Student ID: 201503664</div>
+      <div class="font-bold text-xl mb-2 mt-3">Student ID: 201503664</div>
+      <div class="text-xl">College of Computing Studies</div>
+      <div class="text-xl">Enrolled in 2024-2025</div>
     </div>
-
-    <!--Select School Year-->
-<form class="max-w-sm mx-auto">
-    <label for="academicYearSelect" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Academic Year Select</label>
-    <select id="academicYearSelect" class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-      <option selected>Select an academic year and semester </option>
-      <option value="2023-2024-1">2023-2024 1st</option>
-      <option value="2023-2024-2">2023-2024 2nd</option>
-    </select>
-  </form>
   </div>
-
 </div>
-
             <!--Table-->
             <div class="overflow-x-auto">
                 <table class="w-full text-md text-left  ">
@@ -79,7 +69,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <tr class="border-b dark:border-gray-700"  data-year-semester="2023-2024-1">
+                    <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 text-md font-medium">2023-2024</th>
                             <td class="px-4 py-3 text-md font-medium">1st Semester</td>
                             <td class="px-4 py-3 text-md font-medium">CSB Fee</td>
@@ -88,7 +78,7 @@
                             <td class="px-4 py-3 text-md font-medium">Paid</td>
 
             </tr>
-            <tr class="border-b dark:border-gray-700" data-year-semester="2023-2024-2">
+            <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 text-md font-medium">2023-2024</th>
                             <td class="px-4 py-3 text-md font-medium">2nd Semester</td>
                             <td class="px-4 py-3 text-md font-medium">CCS Fee</td>
@@ -201,26 +191,6 @@
     </section>
     </main>
     <!--End Main-->
-
-    <!--Academic selector-->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const selectElement = document.getElementById('academicYearSelect');
-
-          selectElement.addEventListener('change', function () {
-            const selectedYearSem = this.value; // The value selected in the dropdown
-            const rows = document.querySelectorAll('[data-year-semester]'); // All table rows with the data attribute
-
-            rows.forEach(row => {
-              if (row.getAttribute('data-year-semester') === selectedYearSem) {
-                row.classList.remove('hidden'); // Use Tailwind's utility class to show row
-              } else {
-                row.classList.add('hidden'); // Use Tailwind's utility class to hide row
-              }
-            });
-          });
-        });
-      </script>
 
 
 @include('layouts.footer')
