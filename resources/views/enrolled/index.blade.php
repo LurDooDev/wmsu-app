@@ -184,7 +184,6 @@
                                 <th scope="col" class="px-4 py-3">College</th>
                                 <th scope="col" class="px-4 py-3">Department</th>
                                 <th scope="col" class="px-4 py-3">Course</th>
-                                <th scope="col" class="text-center px-4 py-3">Actions</th>
                             </tr>
                         </thead>
                         <tbody>                       
