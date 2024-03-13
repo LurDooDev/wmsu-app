@@ -145,7 +145,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/students', [StudentController::class, 'index'])->name('admin.students');
 
     // Enrolled Routes
-    Route::get('/admin/enrolled', [EnrolledController::class, 'index'])->name('admin.enrolled');
+    Route::get('/admin/enrolled',function(){return view('enrolled.index');})->name('admin.enrolled');
 
     // Student CRUD
     // Store
