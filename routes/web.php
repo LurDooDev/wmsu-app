@@ -155,7 +155,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/audit-log', [AuditController::class, 'index'])->name('admin.audit');
 
     // System-audit Routes
-    Route::get('/admin/system-log', [SystemLogController::class, 'index'])->name('admin.system');
+    Route::get('/admin/system-log',function(){return view('system_log.index');})->name('admin.system');
 
     // Overview Route
     Route::get('/admin/overview', [AdminController::class, 'index'])->name('admin.overview');
