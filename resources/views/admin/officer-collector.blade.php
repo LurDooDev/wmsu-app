@@ -1,9 +1,9 @@
 @include('layouts.header')
 @include('layouts.sidebar')
 
-<main class="p-9 bg-red-300 dark:bg-red-500 sm:ml-64 pt-20 sm:pt-8 h-auto">
-  <div class="p-4 shadow-sm">
-      <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden shadow-2xl">
+<main class="p-9 sm:ml-64 pt-20 sm:pt-8 h-auto">
+    <div class="p-4">
+      <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
 
       <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-4 mt-4 max-w-full">
             
