@@ -57,6 +57,42 @@
                         </form>
                     </div>
                     <div class="flex items-center space-x-3 w-full md:w-auto">
+                        <button id="filterDropdownButton3" data-dropdown-toggle="filterDropdown3"
+                            class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                            type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                class="h-4 w-4 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            College Filter
+                            <svg class="-mr-1 ml-1.5 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            </svg>
+                        </button>
+                        <div id="filterDropdown3"
+                            class="z-10 hidden w-48 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
+                                <li class="flex items-center">
+                                    <input id="ascend" type="radio" value="ascending" name="college"
+                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="ascend"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Ascending</label>
+                                </li>
+                                <li class="flex items-center">
+                                    <input id="descend" type="radio" value="descending" name="college"
+                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="descend"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Descending</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+
+                    <div class="flex items-center space-x-3 w-full md:w-auto">
                         <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown"
                             class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                             type="button">
@@ -66,7 +102,7 @@
                                     d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
                                     clip-rule="evenodd" />
                             </svg>
-                            Filter
+                            Department Filter
                             <svg class="-mr-1 ml-1.5 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path clip-rule="evenodd" fill-rule="evenodd"
@@ -75,39 +111,66 @@
                         </button>
                         <div id="filterDropdown"
                             class="z-10 hidden w-48 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
-                            <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">School Year</h6>
+                            <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Departments</h6>
                             <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
                                 <li class="flex items-center">
-                                    <input id="firstyear" type="checkbox" value=""
+                                    <input id="CS" type="checkbox" value=""
                                         class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                    <label for="firstyear"
-                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">First
-                                        Year</label>
+                                    <label for="CS"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Computer Science</label>
                                 </li>
                                 <li class="flex items-center">
-                                    <input id="secondyear" type="checkbox" value=""
+                                    <input id="IT" type="checkbox" value=""
                                         class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                    <label for="secondyear"
-                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Second
-                                        Year</label>
-                                </li>
-                                <li class="flex items-center">
-                                    <input id="thirdyear" type="checkbox" value=""
-                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                    <label for="thirdyear"
-                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Third
-                                        Year</label>
-                                </li>
-                                <li class="flex items-center">
-                                    <input id="fourthyear" type="checkbox" value=""
-                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                    <label for="fourthyear"
-                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Fourth
-                                        Year</label>
+                                    <label for="IT"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Information Technology</label>
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div>    
+                    <div class="flex items-center space-x-3 w-full md:w-auto">
+                        <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown2" data-dropdown-target="filterDropdownButton2"
+                            class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                            type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                class="h-4 w-4 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Course Filter
+                            <svg class="-mr-1 ml-1.5 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            </svg>
+                        </button>
+                        <div id="filterDropdown2"
+                            class="z-10 hidden w-48 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Courses</h6>
+                            <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton2">
+                                <li class="flex items-center">
+                                    <input id="BSCS" type="checkbox" value=""
+                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="BSCS"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">BSCS</label>
+                                </li>
+                                <li class="flex items-center">
+                                    <input id="BSIT" type="checkbox" value=""
+                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="BSIT"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">BSIT</label>
+                                </li>
+                                <li class="flex items-center">
+                                    <input id="ACT" type="checkbox" value=""
+                                        class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="ACT"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">ACT</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+            
                 </div>
 
                 <!--End Table Header -->
@@ -119,9 +182,8 @@
                                 <th scope="col" class="px-4 py-3">Student ID</th>
                                 <th scope="col" class="px-4 py-3">Student Name</th>
                                 <th scope="col" class="px-4 py-3">College</th>
+                                <th scope="col" class="px-4 py-3">Department</th>
                                 <th scope="col" class="px-4 py-3">Course</th>
-                                <th scope="col" class="px-4 py-3">Email</th>
-                                <th scope="col" class="px-4 py-3">Year Level</th>
                                 <th scope="col" class="text-center px-4 py-3">Actions</th>
                             </tr>
                         </thead>
@@ -130,9 +192,8 @@
                                 <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">1261029423</th>
                                 <td class="px-4 py-3">Bryan Skater</td>
                                 <td class="px-4 py-3">Collge Of Computing Studies</td>
+                                <td class="px-4 py-3">Computer Science</td>
                                 <td class="px-4 py-3">BSCS</td>
-                                <td class="px-4 py-3">bryan123@gmail.com</td>
-                                <td class="px-4 py-3">Fourth Year</td>
                                 <td class="px-4 py-3"></td>
                             </td>
                             </tr>
