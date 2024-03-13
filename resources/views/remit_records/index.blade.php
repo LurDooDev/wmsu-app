@@ -89,7 +89,6 @@
                             <th scope="col" class="px-4 py-3">Payment Description</th>
                             <th scope="col" class="px-4 py-3">College</th>
                             <th scope="col" class="px-4 py-3">Date</th>
-                            <th scope="col" class="px-4 py-3">Time</th>
                             <th scope="col" class="px-4 py-3">School Year</th>
                             <th scope="col" class="px-4 py-3">Semester</th>
                             <th scope="col" class="px-4 py-3">Amount</th>
@@ -102,7 +101,6 @@
                             <td class="px-4 py-3">CSB fee</td>
                             <td class="px-4 py-3">CCS</td>
                             <td class="px-4 py-3">01-01-2022</td>
-                            <td class="px-4 py-3">10:11</td>
                             <td class="px-4 py-3">2022-2023</td>
                             <td class="px-4 py-3">1st Semester</td>
                             <td class="px-4 py-3">P70</td>
@@ -114,11 +112,10 @@
                             <td class="px-4 py-3">CCS fee</td>
                             <td class="px-4 py-3">CCS</td>
                             <td class="px-4 py-3">01-01-2023</td>
-                            <td class="px-4 py-3">12:11</td>
                             <td class="px-4 py-3">2022-2023</td>
                             <td class="px-4 py-3">1st Semester</td>
                             <td class="px-4 py-3">P250</td>
-                            <td class="px-4 py-3">Not Remitted</td>
+                            <td class="px-4 py-3">Remitted</td>
                             </td>
                         </tr>
                     </tbody>

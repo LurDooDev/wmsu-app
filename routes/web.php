@@ -9,10 +9,13 @@ use App\Http\Controllers\LocalFeeController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\RemitController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\EnrolledController;
+use App\Http\Controllers\SystemLogController;
 use App\Http\Controllers\UniversityFeeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Event\Telemetry\System;
 
 /*
 |--------------------------------------------------------------------------
@@ -140,12 +143,19 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     // Student Routes
     Route::get('/admin/students', [StudentController::class, 'index'])->name('admin.students');
+
+    // Enrolled Routes
+    Route::get('/admin/enrolled', [EnrolledController::class, 'index'])->name('admin.enrolled');
+
     // Student CRUD
     // Store
     Route::post('/admin/students/store', [StudentController::class, 'store'])->name('admin.students.store');
 
     // Audit Routes
     Route::get('/admin/audit-log', [AuditController::class, 'index'])->name('admin.audit');
+
+    // System-audit Routes
+    Route::get('/admin/system-log', [SystemLogController::class, 'index'])->name('admin.system');
 
     // Overview Route
     Route::get('/admin/overview', [AdminController::class, 'index'])->name('admin.overview');

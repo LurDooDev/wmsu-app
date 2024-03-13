@@ -88,7 +88,7 @@
                             <th scope="col" class="px-4 py-3">Student ID</th>
                             <th scope="col" class="px-4 py-3">Student Name</th>
                             <th scope="col" class="px-4 py-3">Total Amount</th>
-                            <th scope="col" class="px-4 py-3">Payment DateTime</th>
+                            <th scope="col" class="px-4 py-3">Date</th>
                             <th scope="col" class="px-4 py-3">Payment Reference</th>
                             <th scope="col" class="px-4 py-3">Collected By</th>
                             <th scope="col" class="px-4 py-3">Status</th>
