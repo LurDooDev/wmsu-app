@@ -48,7 +48,7 @@
          @if (Auth::user()->type == 'admin')
             <!--Admin Home (Dashboard) -->
             <li>
-               <a href="{{route('admin.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('admin.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('admin.home') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
                      <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -60,18 +60,16 @@
                </a>
             </li>
             <!--Admin Payments -->
-            <li>
-               <a href="{{route('admin.payments')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
-                  {{ Route::is(['admin.payments', 'admin.paymentNext','admin.paymentReceipt']) ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
-                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1M2 5h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
-                  </svg>
-                  <span class="ms-3">Payments</span>
-               </a>
-            </li>
+            <a href="{{ route('admin.payments') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
+   {{ Route::is(['admin.payments', 'admin.paymentNext', 'admin.paymentReceipt']) ? 'bg-red-200 hover:bg-red-200' : '' }}">
+    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1M2 5h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+    </svg>
+    <span class="ms-3">Payments</span>
+</a>
             <!--Admin Payment Records -->
             <li>
-               <a href="{{route('admin.payment.records')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('admin.payment.records')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('admin.payment.records') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5h8m-1-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2m6 0h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m0 9.464 2.025 1.965L12 9.571"/>
@@ -81,7 +79,7 @@
             </li>
             <!-- Admin Remits -->
             <li>
-               <a href="{{route('admin.remits')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('admin.remits')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('admin.remits') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                <svg class="flex-shrink-0 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
@@ -91,17 +89,26 @@
             </li>
             <!-- Admin Students -->
             <li>
-               <a href="{{route('admin.students')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('admin.students')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('admin.students') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
-                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.333 6.764a3 3 0 1 1 3.141-5.023M2.5 16H1v-2a4 4 0 0 1 4-4m7.379-8.121a3 3 0 1 1 2.976 5M15 10a4 4 0 0 1 4 4v2h-1.761M13 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-4 6h2a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4Z"/>
                   </svg>
                   <span class="ms-3">Students</span>
                </a>
             </li>
+            <li>
+               <a href="{{route('admin.enrolled')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
+                  {{ Route::is('admin.enrolled') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
+                  <svg width="28px" height="28px" viewBox="0 0 48.00 48.00" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000" stroke-width="1.6799999999999997"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><style type="text/css"> .st0{fill:#010101;} </style><path class="st0" d="M8.04,41.5H32.7c0.276,0,0.5-0.224,0.5-0.5v-5.233l2.736,2.736c0.023,0.023,0.052,0.034,0.077,0.051 c0.019,0.025,0.029,0.056,0.053,0.079l0.64,0.64c0.417,0.417,0.969,0.646,1.554,0.646c0.592,0,1.146-0.229,1.563-0.646 c0.001-0.001,0.002-0.001,0.003-0.002c0.852-0.864,0.851-2.262-0.006-3.118l-0.646-0.637c-0.023-0.023-0.053-0.034-0.079-0.053 c-0.017-0.026-0.029-0.055-0.051-0.077L33.2,29.543V7c0-0.276-0.224-0.5-0.5-0.5H8.04c-0.276,0-0.5,0.224-0.5,0.5v34 C7.54,41.276,7.764,41.5,8.04,41.5z M26.74,27.239l-0.158,0.157l-1.006-2.367l2.367,1.012L26.74,27.239z M27.619,27.776l9.166,9.166 l-0.496,0.5l-3.235-3.235c0,0,0,0,0,0l-5.934-5.935L27.619,27.776z M39.114,38.568c-0.451,0.451-1.24,0.458-1.701-0.001 l-0.417-0.417l1.459-1.467l0.237-0.237l0.424,0.418C39.582,37.329,39.581,38.094,39.114,38.568z M37.49,36.233l-9.163-9.163 l0.493-0.493l3.526,3.526c0,0,0.001,0.001,0.001,0.001l5.636,5.636L37.49,36.233z M8.54,7.5H32.2v21.043l-3.026-3.026 c-0.04-0.04-0.088-0.067-0.136-0.09c-0.008-0.004-0.013-0.013-0.021-0.016l-4.19-1.79c-0.003-0.001-0.005,0-0.008-0.001 c-0.086-0.071-0.193-0.119-0.313-0.119H13.036c-0.276,0-0.5,0.224-0.5,0.5s0.224,0.5,0.5,0.5h11.229l1.683,3.961c0,0,0,0,0,0.001 l0.002,0.004c0.002,0.005,0.007,0.007,0.009,0.011c0.025,0.054,0.056,0.104,0.098,0.147l6.144,6.144V40.5H8.54V7.5z"></path>
+                     <path class="st0" d="M13.39,14.293l1.197-1.197c0.416-0.417,1.144-0.417,1.562,0l0.231,0.232c0.796,0.796,2.182,0.795,2.976,0 l0.232-0.232c0.416-0.417,1.144-0.417,1.562,0l0.305,0.306c0.41,0.41,1.013,0.632,1.554,0.615c0.579-0.019,1.13-0.278,1.512-0.711 c0.21-0.238,0.512-0.374,0.828-0.374c0.001,0,0.001,0,0.001,0c0.317,0,0.618,0.137,0.828,0.375l1.088,1.236 c0.099,0.112,0.236,0.17,0.375,0.17c0.117,0,0.235-0.041,0.33-0.125c0.208-0.183,0.228-0.499,0.045-0.706l-1.088-1.236 c-0.398-0.454-0.974-0.714-1.577-0.714c-0.001,0-0.001,0-0.002,0c-0.604,0-1.179,0.26-1.578,0.713 c-0.203,0.231-0.485,0.363-0.793,0.373c-0.31,0.007-0.598-0.105-0.815-0.322l-0.305-0.306c-0.794-0.794-2.18-0.796-2.976,0 l-0.232,0.232c-0.418,0.417-1.146,0.417-1.562,0l-0.231-0.232c-0.795-0.794-2.18-0.796-2.976,0l-1.197,1.197 c-0.195,0.195-0.195,0.512,0,0.707S13.194,14.488,13.39,14.293z"></path>
+                     <path class="st0" d="M13.39,19.016l1.197-1.197c0.431-0.431,1.131-0.43,1.562,0l0.231,0.232c0.796,0.796,2.182,0.795,2.976,0 l0.232-0.232c0.416-0.417,1.144-0.417,1.562,0l0.305,0.306c0.41,0.41,1.013,0.634,1.554,0.615c0.579-0.019,1.13-0.278,1.512-0.711 c0.21-0.238,0.512-0.374,0.828-0.374c0.001,0,0.001,0,0.002,0c0.316,0,0.617,0.137,0.827,0.375l1.088,1.236 c0.099,0.112,0.236,0.17,0.375,0.17c0.117,0,0.235-0.041,0.33-0.125c0.208-0.183,0.228-0.499,0.045-0.706l-1.087-1.236 c-0.398-0.454-0.974-0.714-1.577-0.714c-0.001,0-0.002,0-0.003,0c-0.604,0-1.179,0.259-1.578,0.712 c-0.203,0.231-0.485,0.363-0.793,0.373c-0.31,0.009-0.598-0.105-0.815-0.322l-0.305-0.306c-0.794-0.794-2.18-0.796-2.976,0 l-0.232,0.232c-0.418,0.417-1.146,0.417-1.562,0l-0.231-0.233c-0.822-0.819-2.155-0.82-2.976,0l-1.197,1.197 c-0.195,0.195-0.195,0.512,0,0.707S13.194,19.211,13.39,19.016z"></path></g></svg>
+                  <span class="ms-3">Enrolled</span>
+               </a>
+            </li>
             <!-- Admin Colleges -->
             <li>
-               <a href="{{route('admin.colleges')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('admin.colleges')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('admin.colleges', 'admin.collegeCS*',) ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="flex-shrink-0 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 1h12M3 1v16M3 1H2m13 0v16m0-16h1m-1 16H3m12 0h2M3 17H1M6 4h1v1H6V4Zm5 0h1v1h-1V4ZM6 8h1v1H6V8Zm5 0h1v1h-1V8Zm-3 4h2a1 1 0 0 1 1 1v4H7v-4a1 1 0 0 1 1-1Z"/>
@@ -109,21 +116,36 @@
                   <span class="flex-1 ms-3 whitespace-nowrap">Colleges</span>
                </a>
             </li>
-            <!-- Admin Audit Log -->
+            <!-- Admin Audit Trail -->
             <li>
-               <a href="{{route('admin.audit')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
-                  {{ Route::is('admin.audit') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
-                  <svg class="flex-shrink-0 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5h8m-1-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2m6 0h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m0 9.464 2.025 1.965L12 9.571"/>
-                  </svg>
-                  <span class="flex-1 ms-3 whitespace-nowrap">Audit Log</span>
+               <a href="{{ route('admin.audit') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
+                   {{ Route::is('admin.audit') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
+                   <svg class="flex-shrink-0 w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5h8m-1-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2m6 0h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m0 9.464 2.025 1.965L12 9.571"/>
+                   </svg>
+                   <span class="flex-1 ms-3 whitespace-nowrap">Audit Trail</span>
                </a>
-            </li>
+           </li>
+           {{-- System Log --}}
+           <li>
+               <a href="{{ route('admin.system') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
+                   {{ Route::is('admin.system') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
+                   <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" width="23" height="25">
+                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                       <g id="SVGRepo_iconCarrier">
+                           <path d="M841 438.9v402.2H182.7V182.9H585v-73.2H109.6v804.6h804.6V438.9z" fill="#000000"></path>
+                           <path d="M522.604 449.558l329.155-329.155 51.689 51.69-329.155 329.154zM255.9 548.6h219.4v73.1H255.9zM255.9 694.9h512V768h-512z" fill="#000000"></path>
+                       </g>
+                   </svg>
+                   <span class="flex-1 ms-3 whitespace-nowrap">System Log</span>
+               </a>
+           </li>
          <!--Officer Sidebar -->
          @elseif (Auth::user()->type == 'officer')
             <!--Officer Home (Dashboard) -->
             <li>
-               <a href="{{route('officer.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('officer.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('officer.home') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
                      <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -136,7 +158,7 @@
             </li>
             <!--Officer Payments -->
             <li>
-               <a href="{{ route('officer.payments') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{ route('officer.payments') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is(['officer.payments', 'officer.paymentNext','officer.paymentReceipt']) ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1M2 5h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
@@ -146,7 +168,7 @@
             </li>
             <!--Officer Payment Records -->
             <li>
-               <a href="{{route('officer.payment.records')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('officer.payment.records')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('officer.payment.records') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5h8m-1-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2m6 0h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m0 9.464 2.025 1.965L12 9.571"/>
@@ -156,7 +178,7 @@
             </li>
             <!--Officer Students -->
             <li>
-               <a href="{{route('officer.students')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('officer.students')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('officer.students') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.333 6.764a3 3 0 1 1 3.141-5.023M2.5 16H1v-2a4 4 0 0 1 4-4m7.379-8.121a3 3 0 1 1 2.976 5M15 10a4 4 0 0 1 4 4v2h-1.761M13 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-4 6h2a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4Z"/>
@@ -168,7 +190,7 @@
          @elseif (Auth::user()->type == 'collector')
             <!--Collector Home (Payments) -->
             <li>
-               <a href="{{route('collector.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('collector.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is(['collector.home', 'collector.paymentNext','collector.paymentReceipt']) ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1M2 5h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
@@ -178,7 +200,7 @@
             </li>
             <!--Collector Payment Records -->
             <li>
-               <a href="{{route('collector.payment.records')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('collector.payment.records')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('collector.payment.records') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5h8m-1-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2m6 0h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m0 9.464 2.025 1.965L12 9.571"/>
@@ -188,7 +210,7 @@
             </li>
             <!--Collector Students -->
             <li>
-               <a href="{{route('collector.students')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group 
+               <a href="{{route('collector.students')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
                   {{ Route::is('collector.students') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.333 6.764a3 3 0 1 1 3.141-5.023M2.5 16H1v-2a4 4 0 0 1 4-4m7.379-8.121a3 3 0 1 1 2.976 5M15 10a4 4 0 0 1 4 4v2h-1.761M13 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-4 6h2a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4Z"/>
@@ -213,25 +235,25 @@
                   <!-- Admin Settings -->
                   @if (Auth::user()->type == 'admin')
                      <li>
-                        <a href="{{route('admin.overview')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('admin.overview')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                            {{ Route::is('admin.overview') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            Overview
                         </a>
                      </li>
                      <li>
-                        <a href="{{route('admin.university.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('admin.university.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                         {{ Route::is('admin.university.fees') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            University Fee
                         </a>
                      </li>
                      <li>
-                        <a href="{{route('admin.local.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('admin.local.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                         {{ Route::is('admin.local.fees') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            Local Fee
                         </a>
                      </li>
                      <li>
-                        <a href="{{route('admin.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('admin.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                         {{ Route::is('admin.users') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            User Management
                         </a>
@@ -239,13 +261,13 @@
                   <!-- Officer Settings -->
                   @elseif (Auth::user()->type == 'officer')
                      <li>
-                        <a href="{{route('officer.local.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('officer.local.fees')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                         {{ Route::is('officer.local.fees') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            Local Fee
                         </a>
                      </li>
                      <li>
-                        <a href="{{route('officer.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('officer.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                         {{ Route::is('officer.users') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            User Management
                         </a>
@@ -253,7 +275,7 @@
                   <!-- Collector Settings -->
                   @elseif (Auth::user()->type == 'collector')
                      <li>
-                        <a href="{{route('collector.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 
+                        <a href="{{route('collector.users')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700
                         {{ Route::is('collector.users') ? 'bg-red-200 hover:bg-red-200 pointer-events-none' : '' }}">
                            User Management
                         </a>
