@@ -106,7 +106,6 @@
         <thead class="text-md  bg-gray-50 dark:bg-gray-700 text-md font-medium">
             <tr class = "border -b  dark:border-gray-700">
                 <th scope="col" class="px-4 py-3 text-md font-medium">Select</th>
-                <th scope="col" class="px-4 py-3 text-md font-medium">Id</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Payment Name</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Academic Year</th>
                 <th scope="col" class="px-4 py-3 text-md font-medium">Semester</th>
@@ -155,7 +154,6 @@
             </tr>
             <tr class="border-b dark:border-gray-700">
                 <td class="px-4 py-3"><input type="checkbox"></td>
-                <td class="px-4 py-3 text-md font-medium">2</td>
                 <td class="px-4 py-3 text-md font-medium">Local Fee</td>
                 <td class="px-4 py-3 text-md font-medium">2023-2024</td>
                 <td class="px-4 py-3 text-md font-medium">1st Semester</td>
