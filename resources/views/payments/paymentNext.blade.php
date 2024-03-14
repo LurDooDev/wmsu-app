@@ -85,7 +85,10 @@
                             <td class="px-4 py-3 text-md font-medium">CSB Fee</td>
                             <td class="px-4 py-3 text-md font-medium">University Fee</td>
                             <td class="px-4 py-3 text-md font-medium">250</td>
-                            <td class="px-4 py-3 text-md font-medium">Paid</td>
+                            <td class="px-4 py-3 text-md font-medium">
+                                <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border 
+                                 border-green-100 dark:border-green-500">Paid</span>
+                            </td>
 
             </tr>
             <tr class="border-b dark:border-gray-700" data-year-semester="2023-2024-2">
@@ -94,7 +97,10 @@
                             <td class="px-4 py-3 text-md font-medium">CCS Fee</td>
                             <td class="px-4 py-3 text-md font-medium">Local Fee</td>
                             <td class="px-4 py-3 text-md font-medium">200</td>
-                            <td class="px-4 py-3 text-md font-medium">Paid</td>
+                            <td class="px-4 py-3 text-md font-medium">
+                                <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-red-700 dark:text-red-400 border
+                                 border-red-100 dark:border-red-500">Unpaid</span>
+                            </td>
 
             </td>
             </tr>

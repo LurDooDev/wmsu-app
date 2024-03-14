@@ -103,7 +103,9 @@
                             <td class="px-4 py-3">2023-04-28 02:58:27</td>
                             <td class="px-4 py-3">USC644b1a3358b43</td>
                             <td class="px-4 py-3">Angelita the Officer</td>
-                            <td class="px-4 py-3">Paid</td>
+                            <td class="px-4 py-3">
+                                <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border border-green-100 dark:border-green-500">Paid</span>
+                            </td>                            
                             <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 <div class="flex justify-center items-center space-x-4">
                                     <button type="button" class="py-2 px-3 flex items-center text-sm font-medium text-center text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
@@ -128,7 +130,9 @@
                             <td class="px-4 py-3">2023-04-28 02:58:27</td>
                             <td class="px-4 py-3">USC644b1a3358b43</td>
                             <td class="px-4 py-3">Angelita the Officer</td>
-                            <td class="px-4 py-3">Paid</td>
+                            <td class="px-4 py-3">
+                                <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-red-700 dark:text-red-400 border border-red-100 dark:border-red-500">Unpaid</span>
+                            </td>                            
                             <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 <div class="flex justify-center items-center space-x-4">
                                     <button type="button" class="py-2 px-3 flex items-center text-sm font-medium text-center text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
@@ -146,6 +150,33 @@
                             </td>
                         </tr>
                     </tbody>
+                    <tbody>                       
+                        <tr class="border-b dark:border-gray-700">
+                           <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">2020-01423</th>
+                           <td class="px-4 py-3">Jason Derulo</td>
+                           <td class="px-4 py-3">450</td>
+                           <td class="px-4 py-3">2023-04-28 02:58:27</td>
+                           <td class="px-4 py-3">USC644b1a3358b43</td>
+                           <td class="px-4 py-3">Angelita the Officer</td>
+                           <td class="px-4 py-3">
+                               <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-yellow-700 dark:text-yellow-400 border border-yellow-100 dark:border-yellow-500">Partial</span>
+                           </td>
+                           <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                               <div class="flex justify-center items-center space-x-4">
+                                   <button type="button" class="py-2 px-3 flex items-center text-sm font-medium text-center text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                       <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                           <g id="SVGRepo_iconCarrier">
+                                               <path d="M9 11H15M9 7H13M9 15H15M5 6.2V21L7.5 19L10 21L12 19L14 21L16.5 19L19 21V6.2C19 5.0799 19 4.51984 18.782 4.09202C18.5903 3.71569 18.2843 3.40973 17.908 3.21799C17.4802 3 16.9201 3 15.8 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                           </g>
+                                       </svg>
+                                       <span class="ml-2">Download Receipt</span>
+                                   </button>
+                               </div>
+                           </td>
+                       </tr>
+                   </tbody>
                 </table>
             </div>
             <!--End Table-->

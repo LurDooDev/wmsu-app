@@ -101,18 +101,24 @@
                 <td class="p-4 text-base font-medium text-end">2023-2024</td>
                 <td class="p-4 text-base font-medium text-end">1st Semester</td>
                 <td class="p-4 text-base font-medium text-end">250</td>
-                <td class="p-4 text-base font-medium text-end">Paid</td>
+                <td class="p-4 text-base font-medium text-end">
+                    <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border 
+                    border-green-100 dark:border-green-500">Paid</span>
+                </td>
             </tr>
 
             <tr class="border-b dark:border-gray-700">
-                <td class="p-4 text-base font-medium">CCS Fee</td>
+                <td class="p-4 text-base font-medium">CSS Fee</td>
                 <td class="p-4 text-base font-medium">Local Fee</td>
                 <td class="p-4 text-base font-medium">1/10/24</td>
-                <td class="p-4 text-base font-medium text-center">5:30 PM</td>
+                <td class="p-4 text-base font-medium text-center">4:30 PM</td>
                 <td class="p-4 text-base font-medium text-end">2023-2024</td>
                 <td class="p-4 text-base font-medium text-end">2nd Semester</td>
-                <td class="p-4 text-base font-medium text-end">200</td>
-                <td class="p-4 text-base font-medium text-end">Paid</td>
+                <td class="p-4 text-base font-medium text-end">250</td>
+                <td class="p-4 text-base font-medium text-end">
+                    <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border 
+                    border-green-100 dark:border-green-500">Paid</span>
+                </td>
             </tr>
 
             <tr class="border-b dark:border-gray-700">

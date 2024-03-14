@@ -140,12 +140,20 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     // Student Routes
     Route::get('/admin/students', [StudentController::class, 'index'])->name('admin.students');
+
+     // Enrolled Routes
+    Route::get('/admin/enrolled',function(){return view('enrolled.index');})->name('admin.enrolled');
     // Student CRUD
     // Store
     Route::post('/admin/students/store', [StudentController::class, 'store'])->name('admin.students.store');
 
     // Audit Routes
     Route::get('/admin/audit-log', [AuditController::class, 'index'])->name('admin.audit');
+
+    //System log Routes
+
+    Route::get('/admin/system-log',function(){return view('system_log.index');})->name('admin.system');
+
 
     // Overview Route
     Route::get('/admin/overview', [AdminController::class, 'index'])->name('admin.overview');

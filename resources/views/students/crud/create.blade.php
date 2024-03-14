@@ -116,21 +116,6 @@
                         @enderror
                     </div>
 
-                    <div class="col-span-6">
-                        <label for="year_level"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year Level</label>
-                        <select id="year_level" name="year_level"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option selected disabled>Select Year Level</option>
-                            <option value="First" @if (old('year_level') == 'First') selected @endif>1st Year</option>
-                            <option value="Second" @if (old('year_level') == 'Second') selected @endif>2nd Year</option>
-                            <option value="Third" @if (old('year_level') == 'Third') selected @endif>3rd Year</option>
-                            <option value="Fourth" @if (old('year_level') == 'Fourth') selected @endif>4th Year</option>
-                        </select>
-                        @error('year_level')
-                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">{{ $message }}</p>
-                        @enderror
-                    </div>
 
                 </div>
                 <div class="mt-auto flex items-center justify-end dark:border-gray-600 p-2">
@@ -159,7 +144,7 @@
             $.ajax({
                 url: '/fetch-courses/' + collegeId, // Adjust the URL to your backend route
                 type: 'GET',
-                success: function(response) {
+                success: function(response) {   
                     var courses = response.courses; // Get the fetched courses
 
                     // Clear existing options in the courses select input
